@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Никита Голубков](https://up.htmlacademy.ru/htmlcss/27/user/1175037).
-* Наставник: [Лиля Зилюкина](https://htmlacademy.ru/profile/id803445).
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/id128353).
 
 ---
 
