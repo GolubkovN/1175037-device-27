@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Каталог товаров: Девайся</title>
+</head>
+<body>
+    <header class="header">
+        <div class="pannel header__pannel">
+          <a href="#" class="header__logo">
+            <img src="./img/logo/device.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс" class="logo header__img">
+          </a>
+          <form class="pannel__search">
+            <label class="search__label">
+              <img src="./img/pannel/search.svg" width="12" height="12" alt="иконка поиска">
+              <input type="search" placeholder="Поиск по сайту" class="search__input">
+            </label>
+            <input type="submit" value="Найти" class="search__button">
+          </form><!--/.pannel__search-->
+          <ul class="pannel__list">
+            <li class="pannel__item">
+              <button type="button" class="pannel__button">
+                <img src="./img/pannel/user.svg" width="12" height="12"  alt="иконка входа">
+                Войти
+              </button>
+            </li><!--/.pannel__item-->
+            <li class="pannel__item">
+              <button type="button" class="pannel__button">
+                <img src="./img/pannel/compare.svg" width="12" height="12"  alt="иконка сравнения">
+                Сравнить
+              </button>
+            </li><!--/.pannel__item-->
+            <li class="pannel__item">
+              <button type="button" class="pannel__button">
+                <img src="./img/pannel/cart.svg" width="12" height="12" alt="иконка корзины">
+                Корзина
+              </button>
+            </li><!--/.pannel__item-->
+          </ul><!--/.pannel__list-->
+        </div><!--/.pannel-->
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Каталог товаров</a>
+            </li><!--/.nav__item-->
+            <li class="nav__item">
+              <a href="#" class="nav__link">Доставка</a>
+            </li><!--/.nav__item-->
+            <li class="nav__item">
+              <a href="#" class="nav__link">Гарантия</a>
+            </li><!--/.nav__item-->
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li><!--/.nav__item-->
+          </ul><!--/.nav__list-->
+        </nav><!--/.header__nav-->
+    </header><!--/.header-->
+    <div class="way">
+        <h1 class="way__title">Моноподы для селфи</h1>
+        <ul class="way__list">
+            <li class="way__item">
+                <a href="#" class="way__link">Главная</a>
+            </li>
+            <li class="way__item">
+                <a href="#" class="way__link">Каталог товаров</a>
+            </li>
+            <li class="way__item">
+                <a href="#" class="way__link">Моноподы для селфи</a>
+            </li>
+        </ul>
+    </div><!--/.way-->
+    <section class="product">
+        <aside class="sidebar">
+            <h3 class="sidebar__title">Цвет</h3>
+            <ul class="checkboxes-list sudebar__checkbox-list">
+                <li class="checkboxes-list__item">
+                    <label class="checkboxes-list__item__label">
+                        <input type="checkbox" name="color" class="checkboxes-list__item__input">
+                        Черный
+                    </label>
+                </li>
+                <li class="checkboxes-list__item">
+                    <label class="checkboxes-list__item__label">
+                        <input type="checkbox" name="color" class="checkboxes-list__item__input">
+                        Белый
+                    </label>
+                </li>
+                <li class="checkboxes-list__item">
+                    <label class="checkboxes-list__item__label">
+                        <input type="checkbox" name="color" class="checkboxes-list__item__input">
+                        Синий
+                    </label>
+                </li>
+                <li class="checkboxes-list__item">
+                    <label class="checkboxes-list__item__label">
+                        <input type="checkbox" name="color" class="checkboxes-list__item__input">
+                        Красный
+                    </label>
+                </li>
+                <li class="checkboxes-list__item">
+                    <label class="checkboxes-list__item__label">
+                        <input type="checkbox" name="color" class="checkboxes-list__item__input">
+                        Розовый
+                    </label>
+                </li>
+            </ul><!--/.checkboxes-list-->
+            <h3 class="sidebar__title">Bluetooth</h3>
+            <ul class="radio-list sidebar__radio-list">
+                <li class="radio-list__item">
+                    <input type="radio" class="radio-list__input" id="radio-1" name="bluetooth" checked>
+                    <label for="radio-1" class="radio-list__label">Есть</label>
+                </li>
+                <li class="radio-list__item">
+                    <input type="radio" class="radio-list__input" id="radio-2" name="bluetooth" checked>
+                    <label for="radio-2" class="radio-list__label">Нет</label>
+                </li>
+            </ul><!--/.radio-list-->
+        </aside><!--/.sidebar-->
+        <ul class="goods">
+            <li class="goods__card">
+                <div class="goods__action">
+                    <button  class="btn goods__btn">В корзину</button>
+                    <span class="goods__text">Добавить к сравнению</span>
+                </div>
+                <figure class="goods__image">
+                    <img src="./img/goods/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка" class="goods__pic">
+                    <figcaption class="goods__name">Любительская селфи-палка <span class="goods__price"></span>500 руб.</figcaption>
+                </figure>
+            </li>
+            <li class="goods__card">
+                <div class="goods__action">
+                    <button  class="btn goods__btn">В корзину</button>
+                    <span class="goods__text">Профессиональная селфи-палка </span>
+                </div>
+                <figure class="goods__image">
+                    <img src="./img/goods/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка " class="goods__pic">
+                    <figcaption class="goods__name">Любительская селфи-палка <span class="goods__price"></span>1 500 руб.</figcaption>
+                </figure>
+            </li>
+            <li class="goods__card">
+                <div class="goods__action">
+                    <button  class="btn goods__btn">В корзину</button>
+                    <span class="goods__text">Добавить к сравнению</span>
+                </div>
+                <figure class="goods__image">
+                    <img src="./img/goods/item-3-jpg.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»" class="goods__pic">
+                    <figcaption class="goods__name">Селфи-палка «Следуй за мной» <span class="goods__price"></span>4 900 руб.</figcaption>
+                </figure>
+            </li>
+            <li class="goods__card">
+                <div class="goods__action">
+                    <button  class="btn goods__btn">В корзину</button>
+                    <span class="goods__text">Добавить к сравнению</span>
+                </div>
+                <figure class="goods__image">
+                    <img src="./img/goods/item-4-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка" class="goods__pic">
+                    <figcaption class="goods__name">Любительская селфи-палка <span class="goods__price"></span>500 руб.</figcaption>
+                </figure>
+            </li>
+        </ul><!--/.goods-->
+    </section><!--/.product-->
+    <footer class="footer">
+        <div class="pannel footer__pannel">
+          <a href="#" class="footer__logo">
+            <img src="./img/logo/device.svg" width="163" height="35" alt="Логотип сайта" class="logo footer__img">
+          </a>
+          <ul class="pannel__list">
+            <li class="pannel__item">
+              <a href="#" class="pannel__link">
+                <img src="./img/pannel/user.svg" width="12" height="12"  alt="иконка входа">
+                Войти
+              </a>
+            </li><!--/.pannel__item-->
+            <li class="pannel__item">
+              <a href="#" class="pannel__link">
+                <img src="./img/pannel/compare.svg" width="12" height="12"  alt="иконка сравнения">
+                Сравнить
+              </a>
+            </li><!--/.pannel__item-->
+            <li class="pannel__item">
+              <a href="#" class="pannel__link">
+                <img src="./img/pannel/cart.svg" width="12" height="12" alt="иконка корзины">
+                Корзина
+              </a>
+            </li><!--/.pannel__item-->
+          </ul><!--/.pannel__list-->
+        </div><!--/.pannel-->
+        <div class="footer__info">
+          <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+          <ul class="footer__nav">
+            <li class="foter__nav__item">
+              <a href="" class="footer__nav__link">Доставка</a>
+            </li>
+            <li class="foter__nav__item">
+              <a href="" class="footer__nav__link">Горантия</a>
+            </li>
+            <li class="foter__nav__item">
+              <a href="" class="footer__nav__link">Контакты</a>
+            </li>
+          </ul>
+          <a href="tel:+1234567890" class="footer__tel">Тел.: +7 (495) 495-95-95</a>
+        </div><!--/.footer__info-->
+        <div class="footer__extras">
+          <div class="footer__socials">
+            <a href="" class="footer__socials__link">Facebook</a>
+            <a href="" class="footer__socials__link">Instagram</a>
+            <a href="" class="footer__socials__link">Twitter</a>
+          </div>
+          <a href="" class="footer__copyright">
+            <img src="./img/logo/logo-htmlacademy.svg" width="27" height="35"  alt="Лого Html академии" class="footer__copyright__logo">
+          </a>
+        </div><!--/.footer__extras-->
+    </footer><!--/.footer-->
+</body>
+</html>
