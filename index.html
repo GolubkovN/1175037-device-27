@@ -9,55 +9,64 @@
 </head>
 <body>
   <header class="header">
-    <div class="pannel header__pannel">
-      <a href="#" class="header__logo">
-        <img src="./img/logo/device.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс" class="logo header__img">
-      </a>
-      <form class="pannel__search">
-        <label class="search__label">
-          <img src="./img/pannel/search.svg" width="12" height="12" alt="иконка поиска">
-          <input type="search" placeholder="Поиск по сайту" class="search__input">
-        </label>
-        <input type="submit" value="Найти" class="search__button">
-      </form><!--/.pannel__search-->
-      <ul class="pannel__list">
-        <li class="pannel__item">
-          <button type="button" class="pannel__button">
-            <img src="./img/pannel/user.svg" width="12" height="12"  alt="иконка входа">
-            Войти
-          </button>
-        </li><!--/.pannel__item-->
-        <li class="pannel__item">
-          <button type="button" class="pannel__button">
-            <img src="./img/pannel/compare.svg" width="12" height="12"  alt="иконка сравнения">
-            Сравнить
-          </button>
-        </li><!--/.pannel__item-->
-        <li class="pannel__item">
-          <button type="button" class="pannel__button">
-            <img src="./img/pannel/cart.svg" width="12" height="12" alt="иконка корзины">
-            Корзина
-          </button>
-        </li><!--/.pannel__item-->
-      </ul><!--/.pannel__list-->
-    </div><!--/.pannel-->
-    <nav class="nav header__nav">
-      <ul class="nav__list">
-        <li class="nav__item">
+    <div class="container">
+      <div class="logo">
+        <img src="./img/logo/device.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс" class="logo__img">
+      </div>
+      <div class="pannel">
+        <form class="pannel__search">
+          <label class="search__label">
+            <img src="./img/pannel/search.svg" width="12" height="12" alt="иконка поиска">
+            <input type="search" placeholder="Поиск по сайту" class="search__input">
+          </label>
+          <input type="submit" value="Найти" class="search__button">
+        </form><!--/.pannel__search-->
+        <ul class="pannel__list">
+          <li class="pannel__item">
+            <div class="pannel__authorization">
+              <button  class="pannel__log-in">
+                Войти
+              </button>
+              <div class="pannel__user">
+                <span class="pannel__user__name">
+                  Валентин Петухов
+                </span>
+                <a href="#" class="pannel__log-out">Выйти</a>
+              </div>
+            </div><!--/.pannel__authorization-->
+          </li><!--/.pannel__item-->
+          <li class="pannel__item">
+            <button type="button" class="pannel__button">
+              <img src="./img/pannel/compare.svg" width="12" height="12"  alt="иконка сравнения">
+              Сравнить
+            </button>
+          </li><!--/.pannel__item-->
+          <li class="pannel__item">
+            <button type="button" class="pannel__button">
+              <img src="./img/pannel/cart.svg" width="12" height="12" alt="иконка корзины">
+              Корзина
+            </button>
+          </li><!--/.pannel__item-->
+        </ul><!--/.pannel__list-->
+      </div><!--/.pannel-->
+      <nav class="nav header__nav">
+        <div class="nav__select">
           <a href="#" class="nav__link">Каталог товаров</a>
-        </li><!--/.nav__item-->
-        <li class="nav__item">
-          <a href="#" class="nav__link">Доставка</a>
-        </li><!--/.nav__item-->
-        <li class="nav__item">
-          <a href="#" class="nav__link">Гарантия</a>
-        </li><!--/.nav__item-->
-        <li class="nav__item">
-          <a href="#" class="nav__link">Контакты</a>
-        </li><!--/.nav__item-->
-      </ul><!--/.nav__list-->
-    </nav><!--/.header__nav-->
-    <span class="header__number">10</span>
+        </div><!--/.nav__item-->
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Доставка</a>
+          </li><!--/.nav__item-->
+          <li class="nav__item">
+            <a href="#" class="nav__link">Гарантия</a>
+          </li><!--/.nav__item-->
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакты</a>
+          </li><!--/.nav__item-->
+        </ul><!--/.nav__list-->
+      </nav><!--/.header__nav-->
+      <div class="header__number">10</div>
+    </div><!--/.container-->
   </header><!--/.header-->
   <main>
     <section class="hyro">
@@ -288,56 +297,69 @@
     </section><!--/.contacts-->
   </main>
   <footer class="footer">
-    <div class="pannel footer__pannel">
-      <a href="#" class="footer__logo">
-        <img src="./img/logo/device.svg" width="163" height="35" alt="Логотип сайта" class="logo footer__img">
-      </a>
-      <ul class="pannel__list">
-        <li class="pannel__item">
-          <a href="#" class="pannel__link">
-            <img src="./img/pannel/user.svg" width="12" height="12"  alt="иконка входа">
-            Войти
-          </a>
-        </li><!--/.pannel__item-->
-        <li class="pannel__item">
-          <a href="#" class="pannel__link">
-            <img src="./img/pannel/compare.svg" width="12" height="12"  alt="иконка сравнения">
-            Сравнить
-          </a>
-        </li><!--/.pannel__item-->
-        <li class="pannel__item">
-          <a href="#" class="pannel__link">
-            <img src="./img/pannel/cart.svg" width="12" height="12" alt="иконка корзины">
-            Корзина
-          </a>
-        </li><!--/.pannel__item-->
-      </ul><!--/.pannel__list-->
-    </div><!--/.pannel-->
-    <div class="footer__info">
-      <p class="footer__address">г. Москва, ул. Строителей, 15</p>
-      <ul class="footer__nav">
-        <li class="foter__nav__item">
-          <a href="" class="footer__nav__link">Доставка</a>
-        </li>
-        <li class="foter__nav__item">
-          <a href="" class="footer__nav__link">Горантия</a>
-        </li>
-        <li class="foter__nav__item">
-          <a href="" class="footer__nav__link">Контакты</a>
-        </li>
-      </ul>
-      <a href="tel:+1234567890" class="footer__tel">Тел.: +7 (495) 495-95-95</a>
-    </div><!--/.footer__info-->
-    <div class="footer__extras">
-      <div class="footer__socials">
-        <a href="" class="footer__socials__link">Facebook</a>
-        <a href="" class="footer__socials__link">Instagram</a>
-        <a href="" class="footer__socials__link">Twitter</a>
-      </div>
-      <a href="" class="footer__copyright">
-        <img src="./img/logo/logo-htmlacademy.svg" width="27" height="35"  alt="Лого Html академии" class="footer__copyright__logo">
-      </a>
-    </div><!--/.footer__extras-->
+    <div class="container">
+      <div class="pannel">
+        <form class="pannel__search">
+          <label class="search__label">
+            <img src="./img/pannel/search.svg" width="12" height="12" alt="иконка поиска">
+            <input type="search" placeholder="Поиск по сайту" class="search__input">
+          </label>
+          <input type="submit" value="Найти" class="search__button">
+        </form><!--/.pannel__search-->
+        <ul class="pannel__list">
+          <li class="pannel__item">
+            <div class="pannel__authorization">
+              <button  class="pannel__log-in">
+                Войти
+              </button>
+              <div class="pannel__user">
+                <span class="pannel__user__name">
+                  Валентин Петухов
+                </span>
+                <a href="#" class="pannel__log-out">Выйти</a>
+              </div>
+            </div><!--/.pannel__authorization-->
+          </li><!--/.pannel__item-->
+          <li class="pannel__item">
+            <button type="button" class="pannel__button">
+              <img src="./img/pannel/compare.svg" width="12" height="12"  alt="иконка сравнения">
+              Сравнить
+            </button>
+          </li><!--/.pannel__item-->
+          <li class="pannel__item">
+            <button class="pannel__button">
+              <img src="./img/pannel/cart.svg" width="12" height="12" alt="иконка корзины">
+              Корзина
+            </button>
+          </li><!--/.pannel__item-->
+        </ul><!--/.pannel__list-->
+      </div><!--/.pannel-->
+      <div class="footer__info">
+        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer__nav">
+          <li class="foter__nav__item">
+            <a href="" class="footer__nav__link">Доставка</a>
+          </li>
+          <li class="foter__nav__item">
+            <a href="" class="footer__nav__link">Горантия</a>
+          </li>
+          <li class="foter__nav__item">
+            <a href="" class="footer__nav__link">Контакты</a>
+          </li>
+        </ul>
+        <a href="tel:+1234567890" class="footer__tel">Тел.: +7 (495) 495-95-95</a>
+      </div><!--/.footer__info-->
+      <div class="footer__extras">
+        <div class="footer__socials">
+          <a href="" class="footer__socials__link">Facebook</a>
+          <a href="" class="footer__socials__link">Instagram</a>
+          <a href="" class="footer__socials__link">Twitter</a>
+        </div>
+        <a href="" class="footer__copyright">
+          <img src="./img/logo/logo-htmlacademy.svg" width="27" height="35"  alt="Лого Html академии" class="footer__copyright__logo">
+        </a>
+      </div><!--/.footer__extras-->
+    </div><!--/.container-->
   </footer><!--/.footer-->
 </body>
 </html>
