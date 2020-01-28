@@ -11,22 +11,21 @@
   <header class="header">
     <div class="container">
       <div class="logo">
-        <img src="./img/logo/device.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс" class="logo__img">
+        <img src="./img/logo/logo-black.png" width="163" height="35" alt="Логотип интернет-магазина Девайс" class="logo__img">
       </div>
       <div class="pannel">
-        <form class="pannel__search">
+        <form class="search pannel__search">
           <label class="search__label">
-            <img src="./img/pannel/search.svg" width="12" height="12" alt="иконка поиска">
             <input type="search" placeholder="Поиск по сайту" class="search__input">
           </label>
-          <input type="submit" value="Найти" class="search__button">
+          <input type="button" value="Найти" class="search__button">
         </form><!--/.pannel__search-->
         <ul class="pannel__list">
           <li class="pannel__item">
             <div class="pannel__authorization">
-              <button  class="pannel__log-in">
+              <a href="#" class="pannel__button">
                 Войти
-              </button>
+              </a>
               <div class="pannel__user">
                 <span class="pannel__user__name">
                   Валентин Петухов
@@ -36,14 +35,14 @@
             </div><!--/.pannel__authorization-->
           </li><!--/.pannel__item-->
           <li class="pannel__item">
-            <button type="button" class="pannel__button">
+            <a href="#" class="pannel__button">
               Сравнить
-            </button>
+            </a>
           </li><!--/.pannel__item-->
           <li class="pannel__item">
-            <button type="button" class="pannel__button">
+            <a href="#" class="pannel__button">
               Корзина
-            </button>
+            </a>
           </li><!--/.pannel__item-->
         </ul><!--/.pannel__list-->
       </div><!--/.pannel-->
@@ -82,51 +81,52 @@
     </div><!--/.breadcrumb-->
     <section class="product">
       <aside class="sidebar">
-          <form action="#" class="product__filter">
-            <fieldset class="product__filter__checkbox">
-              <legend class="product__filter__title">Цвет</legend>
-                <div class="product__checkbox__item">
-                  <label class="product__checkbox__label">
-                    <input type="checkbox" name="color" class="product__checkbox__input">
+          <form action="#" class="product-filter">
+            <fieldset class="product-filter__checkboxes">
+              <legend class="product-filter__title">Цвет</legend>
+                <div class="product-filter__item">
+                  <label class="product-filter__check-label">
+                    <input type="checkbox" name="color" class="product-filter__check-input">
                     Черный
                   </label>
                 </div> 
-                <div class="product__checkbox__item">
-                  <label class="product__checkbox__label">
-                    <input type="checkbox" name="color" class="product__checkbox__input">
+                <div class="product-filter__item">
+                  <label class="product-filter__check-label">
+                    <input type="checkbox" name="color" class="product-filter__check-input">
                     Белый
                   </label>
                 </div>
-                <div class="product__checkbox__item">
-                  <label class="product__checkbox__label">
-                    <input type="checkbox" name="color" class="product__checkbox__input">
+                <div class="product-filter__item">
+                  <label class="product-filter__check-label">
+                    <input type="checkbox" name="color" class="product-filter__check-input">
                     Синий
                   </label>
                 </div>
-                <div class="product__checkbox__item">
-                  <label class="product__checkbox__label">
-                    <input type="checkbox" name="color" class="product__checkbox__input">
+                <div class="product-filter__item">
+                  <label class="product-filter__check-label">
+                    <input type="checkbox" name="color" class="product-filter__check-input">
                     Красный
                   </label>
                 </div>
-                <div class="product__checkbox__item">
-                  <label class="product__checkbox__label">
-                    <input type="checkbox" name="color" class="product__checkbox__input">
+                <div class="product-filter__item">
+                  <label class="product-filter__check-label">
+                    <input type="checkbox" name="color" class="product-filter__check-input">
                     Розовый
                   </label>
                 </div>
-            </fieldset>
-            <fieldset class="product__radio">
-              <legend class="product__filter__title">Bluetooth</legend>
-                <div class="product__radio__item">
-                  <input type="radio" class="product__radio__input" id="radio-1" name="bluetooth" checked>
-                  <label for="radio-1" class="product__radio__label">Есть</label>
+            </fieldset><!--/.product-filter__checkboxes-->
+            <fieldset class="product-filter__radio">
+              <legend class="product-filter__title">Bluetooth</legend>
+                <div class="product-filter__item">
+                  <input type="radio" class="product-filter__radio-input" id="radio-1" name="bluetooth">
+                  <label for="radio-1" class="product-filter__radio-label">Есть</label>
                 </div>
-                <div class="product__radio__item">
-                  <input type="radio" class="product__radio__input" id="radio-2" name="bluetooth" checked>
-                  <label for="radio-2" class="product__radio__label">Нет</label>
+                <div class="product-filter__item">
+                  <input type="radio" class="product-filter__radio-input" id="radio-2" name="bluetooth">
+                  <label for="radio-2" class="product-filter__radio-label">Нет</label>
                 </div>
-            </fieldset>
+            </fieldset><!--/.product-filter__radio-->
+            <a href="#" class="btn">Показать</a>
           </form><!--/.product__filter-->
       </aside><!--/.sidebar-->
       <ul class="goods">
@@ -174,67 +174,63 @@
     </section><!--/.product-->
   </main>
   <footer class="footer">
-      <div class="container">
-        <div class="pannel">
-          <form class="pannel__search">
-            <label class="search__label">
-              <img src="./img/pannel/search.svg" width="12" height="12" alt="иконка поиска">
-              <input type="search" placeholder="Поиск по сайту" class="search__input">
-            </label>
-            <input type="submit" value="Найти" class="search__button">
-          </form><!--/.pannel__search-->
-          <ul class="pannel__list">
-            <li class="pannel__item">
-              <div class="pannel__authorization">
-                <button  class="pannel__log-in">
-                  Войти
-                </button>
-                <div class="pannel__user">
-                  <span class="pannel__user__name">
-                    Валентин Петухов
-                  </span>
-                  <a href="#" class="pannel__log-out">Выйти</a>
-                </div>
-              </div><!--/.pannel__authorization-->
-            </li><!--/.pannel__item-->
-            <li class="pannel__item">
-              <button type="button" class="pannel__button">
-                Сравнить
-              </button>
-            </li><!--/.pannel__item-->
-            <li class="pannel__item">
-              <button type="button" class="pannel__button">
-                Корзина
-              </button>
-            </li><!--/.pannel__item-->
-          </ul><!--/.pannel__list-->
-        </div><!--/.pannel-->
-        <div class="footer__info">
-          <p class="footer__address">г. Москва, ул. Строителей, 15</p>
-          <ul class="footer__nav">
-            <li class="foter__nav__item">
-              <a href="" class="footer__nav__link">Доставка</a>
-            </li>
-            <li class="foter__nav__item">
-              <a href="" class="footer__nav__link">Горантия</a>
-            </li>
-            <li class="foter__nav__item">
-              <a href="" class="footer__nav__link">Контакты</a>
-            </li>
-          </ul>
-          <a href="tel:+1234567890" class="footer__tel">Тел.: +7 (495) 495-95-95</a>
-        </div><!--/.footer__info-->
-        <div class="footer__extras">
-          <div class="footer__socials">
-            <a href="" class="footer__socials__link">Facebook</a>
-            <a href="" class="footer__socials__link">Instagram</a>
-            <a href="" class="footer__socials__link">Twitter</a>
-          </div>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright">
-            <img src="./img/logo/logo-htmlacademy.svg" width="27" height="35"  alt="Лого Html академии" class="footer__copyright__logo">
-          </a>
-        </div><!--/.footer__extras-->
-      </div><!--/.container-->
+    <div class="container">
+      <div class="logo">
+        <img src="./img/logo/device.png" width="163" height="35" alt="Логотип интернет-магазина Девайс" class="logo__img logo__img--yellow">
+      </div>
+      <div class="pannel">
+        <ul class="pannel__list">
+          <li class="pannel__item">
+            <div class="pannel__authorization">
+              <a href="#" class="pannel__button">
+                Войти
+              </a>
+              <div class="pannel__user">
+                <span class="pannel__user__name">
+                  Валентин Петухов
+                </span>
+                <a href="#" class="pannel__log-out">Выйти</a>
+              </div>
+            </div><!--/.pannel__authorization-->
+          </li><!--/.pannel__item-->
+          <li class="pannel__item">
+            <a href="#" class="pannel__button">
+              Сравнить
+            </a>
+          </li><!--/.pannel__item-->
+          <li class="pannel__item">
+            <a href="#" class="pannel__button">
+              Корзина
+            </a>
+          </li><!--/.pannel__item-->
+        </ul><!--/.pannel__list-->
+      </div><!--/.pannel-->
+      <div class="footer__info">
+        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+        <ul class="nav footer__nav">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Доставка</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Горантия</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+        <a href="tel:+1234567890" class="footer__tel">Тел.: +7 (495) 495-95-95</a>
+      </div><!--/.footer__info-->
+      <div class="footer__extras">
+        <div class="socials">
+          <a href="" class="socials__link">Facebook</a>
+          <a href="" class="socials__link">Instagram</a>
+          <a href="" class="socials__link">Twitter</a>
+        </div>
+        <a href="" class="copyright">
+          <img src="./img/logo/logo-htmlacademy.svg" width="27" height="35"  alt="Логотип Html академии" class="copyright__img">
+        </a>
+      </div><!--/.footer__extras-->
+    </div><!--/.container-->
   </footer><!--/.footer-->
 </body>
 </html>
