@@ -11,14 +11,17 @@
   <header class="header">
     <div class="container">
       <div class="logo">
-        <img src="./img/logo/logo-black.png" width="163" height="35" alt="Логотип интернет-магазина Девайс" class="logo__img">
+        <img src="./img/logo/logo-black.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
       </div>
       <div class="pannel">
         <form class="search pannel__search">
+          <button type="submit" class="search__button">
+            <img src="./img/pannel/search.svg" alt="иконка поиска по сайту" class="search__icon" width="12" height="12">
+          </button>
           <label class="search__label">
-            <input type="search" placeholder="Поиск по сайту" class="search__input">
+            <input type="search" placeholder="Поиск по сайту">
           </label>
-          <input type="button" value="Найти" class="search__button">
+          <button class="btn">найти</button>
         </form><!--/.pannel__search-->
         <ul class="pannel__list">
           <li class="pannel__item">
@@ -27,7 +30,7 @@
                 Войти
               </a>
               <div class="pannel__user">
-                <span class="pannel__user__name">
+                <span class="pannel__user-name">
                   Валентин Петухов
                 </span>
                 <a href="#" class="pannel__log-out">Выйти</a>
@@ -62,30 +65,30 @@
           </li><!--/.nav__item-->
         </ul><!--/.nav__list-->
       </nav><!--/.header__nav-->
-      <div class="header__number">10</div>
     </div><!--/.container-->
   </header><!--/.header-->
   <main>
-    <section class="hyro">
+    <section class="hero">
       <div class="container">
-        <ul class="hyro-slider">
-          <li class="hyro-slider__item">
-            <img src="./img/slider-1/slider-1-png@3x.png" width="384" height="486" alt="Самая длинная палка для селфи " class="hyro-slider__img">
-            <div class="hyro-slider__desc">
-              <h1 class="hyro-slider__title">Делай селфи, как Бен Стиллер!</h1>
-              <p class="hyro-slider__text">
-                Самая длинная палка для селфи доступна в нашем магазине. <br>
+        <ul class="hero-slider">
+          <li class="hero-slider__item">
+            <img src="./img/slider-1/slider-1-png@3x.png" width="384" height="486" alt="Самая длинная палка для селфи " class="hero-slider__img">
+            <div class="hero-slider__desc">
+              <div class="hero-slider__number">01</div>
+              <h1 class="hero-slider__title">Делай селфи, как Бен Стиллер!</h1>
+              <p class="hero-slider__text">
+                Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
-              <div class="hyro-slider__buttons">
-                <a href="#" class="btn hyro-slider__btn">Подробнее</a>
+              <div class="hero-slider__buttons">
+                <a href="#" class="btn hero-slider__btn">Подробнее</a>
                 <div class="buttons-row">
                   <input type="radio" class="buttons-row__input">
                   <input type="radio" class="buttons-row__input">
                   <input type="radio" class="buttons-row__input">
                 </div><!--/.buttons-row-->
-              </div><!--/.hyro-slider__buttons-->
-              <table class="hyro-slider__definitions">
+              </div><!--/.hero-slider__buttons-->
+              <table class="hero-slider__definitions">
                 <tr>
                   <td>8,5 м</td>
                   <td>5 кг</td>
@@ -96,52 +99,54 @@
                   <td>Вес палки</td>
                   <td>Материал</td>
                 </tr>
-              </table><!--/.hyro-slider__definitions-->
+              </table><!--/.hero-slider__definitions-->
             </div><!--/.huro-slider__desc-->
-          </li><!--/.hyro-slider__item-->
-          <li class="hyro-slider__item">
-            <img src="./img/slider-1/slider-2-png@2x.png" width="345" height="485" alt="Мотивирующий фитнес-брослет" class="hyro-slider__img">
-            <div class="hyro-slider__desc">
-              <h1 class="hyro-slider__title">Худеем правильно!</h1>
-              <p class="hyro-slider__text">
+          </li><!--/.hero-slider__item-->
+          <li class="hero-slider__item">
+            <img src="./img/slider-1/slider-2-png@2x.png" width="345" height="485" alt="Мотивирующий фитнес-брослет" class="hero-slider__img">
+            <div class="hero-slider__desc">
+              <div class="hero-slider__number">02</div>
+              <h1 class="hero-slider__title">Худеем правильно!</h1>
+              <p class="hero-slider__text">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
                 не пропускать занятия и соблюдать диету.
               </p>
-              <div class="hyro-slider__buttons">
-                <a href="#" class="btn hyro-slider__btn">Подробнее</a>
+              <div class="hero-slider__buttons">
+                <a href="#" class="btn hero-slider__btn">Подробнее</a>
                 <div class="buttons-row">
                   <input type="radio" class="buttons-row__input">
                   <input type="radio" class="buttons-row__input">
                   <input type="radio" class="buttons-row__input">
                 </div><!--/.buttons-row-->
-              </div><!--/.hyro-slider__buttons-->
-              <table class="hyro-slider__definitions">
+              </div><!--/.hero-slider__buttons-->
+              <table class="hero-slider__definitions">
                 <tr>
                   <td>48 часов</td>
                 </tr>
                 <tr>
                   <td>Без подзарядки</td>
                 </tr>
-              </table><!--/.hyro-slider__definitions-->
-            </div><!--/.hyro-slider__desc-->
-          </li><!--/.hyro-slider__item-->
-          <li class="hyro-slider__item">
-            <img src="./img/slider-1/slider-3-png@2x.png" width="526" height="334" alt="Квадрокоптер" class="hyro-slider__img">
-            <div class="hyro-slider__desc">
-              <h1 class="hyro-slider__title">Порхает как бабочка, жалит как пчела!</h1>
-              <p class="hyro-slider__text">
-                Этот обычный, на первый взгляд, квадрокоптер оснащен <br> 
+              </table><!--/.hero-slider__definitions-->
+            </div><!--/.hero-slider__desc-->
+          </li><!--/.hero-slider__item-->
+          <li class="hero-slider__item">
+            <img src="./img/slider-1/slider-3-png@2x.png" width="526" height="334" alt="Квадрокоптер" class="hero-slider__img">
+            <div class="hero-slider__desc">
+              <div class="hero-slider__number">03</div>
+              <h1 class="hero-slider__title">Порхает как бабочка, жалит как пчела!</h1>
+              <p class="hero-slider__text">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
-              <div class="hyro-slider__buttons">
-                <a href="#" class="btn hyro-slider__btn">Подробнее</a>
+              <div class="hero-slider__buttons">
+                <a href="#" class="btn hero-slider__btn">Подробнее</a>
                 <div class="buttons-row">
                   <input type="radio" class="buttons-row__input">
                   <input type="radio" class="buttons-row__input">
                   <input type="radio" class="buttons-row__input">
                 </div><!--/.buttons-row-->
-              </div><!--/.hyro-slider__buttons-->
-              <table class="hyro-slider__definitions">
+              </div><!--/.hero-slider__buttons-->
+              <table class="hero-slider__definitions">
                 <tr>
                   <td>800 м</td>
                   <td>50 м</td>
@@ -150,12 +155,12 @@
                   <td>Дальность полета</td>
                   <td>Радиус поражения</td>
                 </tr>
-              </table><!--/.hyro-slider__definitions-->
-            </div><!--/.hyro-slider__desc-->
-          </li><!--/.hyro-slider__item-->
-        </ul><!--/.hyro-slider-->
+              </table><!--/.hero-slider__definitions-->
+            </div><!--/.hero-slider__desc-->
+          </li><!--/.hero-slider__item-->
+        </ul><!--/.hero-slider-->
       </div><!--/.container-->
-    </section><!--/.hyro-->
+    </section><!--/.hero-->
     <section class="sections">
       <div class="container">
         <ul class="sections__list">
@@ -222,17 +227,17 @@
             <li class="services__item">
               <h2 class="services__title">Доставка</h2>
               <p class="srvices__text">
-                Мы с удовольствием доставим ваш товар прямо к вашему <br>
-                подъезду совершенно бесплатно! Ведь мы неплохо <br>
-                заработаем, поднимая его на ваш этаж. <br>
+                Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно! Ведь мы неплохо 
+                заработаем, поднимая его на ваш этаж.
               </p>
               <img src="./img/slider-2/delivery.svg" alt="доставка" width="136" height="164" class="services__img">
             </li><!--/.services__slider__item-->
             <li class="services__item">
               <h2 class="services__title">Гарантия</h2>
               <p class="srvices__text">
-                Если из-за возгорания купленного у нас товара у вас сгорит <br>
-                дом — не переживайте, мы выдадим вам новый. <br>
+                Если из-за возгорания купленного у нас товара у вас сгорит 
+                дом — не переживайте, мы выдадим вам новый. 
                 Товар, не дом, конечно же.
               </p>
               <img src="./img/slider-2/warranty.svg" alt="доставка" width="136" height="164" class="services__img">
@@ -240,8 +245,8 @@
             <li class="services__item">
               <h2 class="services__title">Кредит</h2>
               <p class="srvices__text">
-                Залезть в долговую яму стало проще! Кредитные <br>
-                консультанты подберут для вас наиболее выгодные <br>
+                Залезть в долговую яму стало проще! Кредитные 
+                консультанты подберут для вас наиболее выгодные 
                 условия кредита. Выгодные для нашего банка, разумеется.>
               </p>
               <img src="./img/slider-2/credit.svg" alt="доставка" width="136" height="164" class="services__img">
@@ -270,14 +275,14 @@
     </section><!--/.logos-->
     <section class="about-us">
       <div class="container">
-        <div class="about-us__item">
+        <article class="about-us__item">
           <span class="abot-us__title">О нас</span>
           <p class="about-us__text">
-            Огромный выбор гаджетов не оставит равнодушным гика, <br>
+            Огромный выбор гаджетов не оставит равнодушным гика, 
             который есть в каждом из нас.
           </p>
           <p class="about-us__text">
-            Мы можем доставить ваш товар в самые отдаленные точки <br>
+            Мы можем доставить ваш товар в самые отдаленные точки 
             России! DEVICE работает со многими транспортными компаниями:
           </p>
           <ul class="partners about-us__partners">
@@ -292,25 +297,25 @@
             </li>
           </ul><!--/.partners-->
           <a href="#" class="btn partners__btn">Подробнее о нас</a>
-        </div><!--/.about-us__item-->
-        <div class="about-us__item">
+        </article><!--/.about-us__item-->
+        <article class="about-us__item">
           <span class="about-us__title">Контакты</span>
           <p class="about-us__text">
-            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
           <a href="#" class="about-us__link">
-            <img src="./img/map-jpg.jpg" alt="Карта как к нам добраться" width="560" height="222" class="about-us__map">
+            <img src="./img/map-jpg.jpg" alt="Карта как к нам добраться" width="560" height="222">
           </a>
           <a href="#" class="btn partners__btn">Напишите нам</a>
-        </div><!--/.about-us__item-->
+        </article><!--/.about-us__item-->
       </div><!--/.container-->
     </section><!--/.about-us-->
   </main>
   <footer class="footer">
     <div class="container">
       <div class="logo">
-        <img src="./img/logo/device.png" width="163" height="35" alt="Логотип интернет-магазина Девайс" class="logo__img logo__img--yellow">
+        <img src="./img/logo/device.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
       </div>
       <div class="pannel">
         <ul class="pannel__list">
@@ -320,7 +325,7 @@
                 Войти
               </a>
               <div class="pannel__user">
-                <span class="pannel__user__name">
+                <span class="pannel__user-name">
                   Валентин Петухов
                 </span>
                 <a href="#" class="pannel__log-out">Выйти</a>
@@ -340,7 +345,7 @@
         </ul><!--/.pannel__list-->
       </div><!--/.pannel-->
       <div class="footer__info">
-        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+        <span class="footer__address">г. Москва, ул. Строителей, 15</span>
         <ul class="nav footer__nav">
           <li class="nav__item">
             <a href="#" class="nav__link">Доставка</a>
@@ -361,7 +366,7 @@
           <a href="" class="socials__link">Twitter</a>
         </div>
         <a href="" class="copyright">
-          <img src="./img/logo/logo-htmlacademy.svg" width="27" height="35"  alt="Логотип Html академии" class="copyright__img">
+          <img src="./img/logo/logo-htmlacademy.svg" width="27" height="35"  alt="Логотип Html академии">
         </a>
       </div><!--/.footer__extras-->
     </div><!--/.container-->

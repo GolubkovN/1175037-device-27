@@ -10,15 +10,18 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <img src="./img/logo/logo-black.png" width="163" height="35" alt="Логотип интернет-магазина Девайс" class="logo__img">
-      </div>
+      <a href="index.html" class="logo">
+        <img src="./img/logo/logo-black.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
+      </a>
       <div class="pannel">
         <form class="search pannel__search">
+          <button type="submit" class="search__button">
+            <img src="./img/pannel/search.svg" alt="иконка поиска по сайту" class="search__icon" width="12" height="12">
+          </button>
           <label class="search__label">
-            <input type="search" placeholder="Поиск по сайту" class="search__input">
+            <input type="search" placeholder="Поиск по сайту">
           </label>
-          <input type="button" value="Найти" class="search__button">
+          <button>найти</button>
         </form><!--/.pannel__search-->
         <ul class="pannel__list">
           <li class="pannel__item">
@@ -27,7 +30,7 @@
                 Войти
               </a>
               <div class="pannel__user">
-                <span class="pannel__user__name">
+                <span class="pannel__user-name">
                   Валентин Петухов
                 </span>
                 <a href="#" class="pannel__log-out">Выйти</a>
@@ -65,8 +68,10 @@
     </div><!--/.container-->
   </header><!--/.header-->
   <main>
+    <div class="page-title">
+      <h1>Моноподы для селфи</h1>
+    </div>
     <div class="breadcrumb">
-      <h1 class="breadcrumb__title">Моноподы для селфи</h1>
       <ul class="breadcrumb__list">
           <li class="breadcrumb__item">
               <a href="#" class="breadcrumb__link">Главная</a>
@@ -126,7 +131,7 @@
                   <label for="radio-2" class="product-filter__radio-label">Нет</label>
                 </div>
             </fieldset><!--/.product-filter__radio-->
-            <a href="#" class="btn">Показать</a>
+            <button type="submit" class="btn">Показать</button>
           </form><!--/.product__filter-->
       </aside><!--/.sidebar-->
       <ul class="goods">
@@ -175,9 +180,9 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="logo">
-        <img src="./img/logo/device.png" width="163" height="35" alt="Логотип интернет-магазина Девайс" class="logo__img logo__img--yellow">
-      </div>
+      <a href="index.html" class="logo">
+        <img src="./img/logo/logo-black.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
+      </a>
       <div class="pannel">
         <ul class="pannel__list">
           <li class="pannel__item">
@@ -186,7 +191,7 @@
                 Войти
               </a>
               <div class="pannel__user">
-                <span class="pannel__user__name">
+                <span class="pannel__user-name">
                   Валентин Петухов
                 </span>
                 <a href="#" class="pannel__log-out">Выйти</a>
@@ -206,7 +211,7 @@
         </ul><!--/.pannel__list-->
       </div><!--/.pannel-->
       <div class="footer__info">
-        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+        <span class="footer__address">г. Москва, ул. Строителей, 15</span>
         <ul class="nav footer__nav">
           <li class="nav__item">
             <a href="#" class="nav__link">Доставка</a>
@@ -227,7 +232,7 @@
           <a href="" class="socials__link">Twitter</a>
         </div>
         <a href="" class="copyright">
-          <img src="./img/logo/logo-htmlacademy.svg" width="27" height="35"  alt="Логотип Html академии" class="copyright__img">
+          <img src="./img/logo/logo-htmlacademy.svg" width="27" height="35"  alt="Логотип Html академии">
         </a>
       </div><!--/.footer__extras-->
     </div><!--/.container-->
