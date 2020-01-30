@@ -15,13 +15,11 @@
       </a>
       <div class="pannel">
         <form class="search pannel__search">
-          <button type="submit" class="search__button">
+          <label>
             <img src="./img/pannel/search.svg" alt="иконка поиска по сайту" class="search__icon" width="12" height="12">
-          </button>
-          <label class="search__label">
             <input type="search" placeholder="Поиск по сайту">
           </label>
-          <button>найти</button>
+          <button type="submit" class="search__button">Найти</button>
         </form><!--/.pannel__search-->
         <ul class="pannel__list">
           <li class="pannel__item">
@@ -68,24 +66,27 @@
     </div><!--/.container-->
   </header><!--/.header-->
   <main>
-    <div class="page-title">
-      <h1>Моноподы для селфи</h1>
-    </div>
-    <div class="breadcrumb">
-      <ul class="breadcrumb__list">
-          <li class="breadcrumb__item">
-              <a href="#" class="breadcrumb__link">Главная</a>
-          </li>
-          <li class="breadcrumb__item">
-              <a href="#" class="breadcrumb__link">Каталог товаров</a>
-          </li>
-          <li class="breadcrumb__item">
-              <a href="#" class="breadcrumb__link">Моноподы для селфи</a>
-          </li>
-      </ul>
-    </div><!--/.breadcrumb-->
+    <div class="container">
+      <div class="page-title">
+        <h1>Моноподы для селфи</h1>
+      </div>
+      <div class="breadcrumb">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+                <a href="#" class="breadcrumb__link">Главная</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="#" class="breadcrumb__link">Каталог товаров</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="#" class="breadcrumb__link">Моноподы для селфи</a>
+            </li>
+        </ul>
+      </div><!--/.breadcrumb-->
+    </div><!--/.container-->
     <section class="product">
-      <aside class="sidebar">
+      <div class="container">
+        <aside class="sidebar">
           <form action="#" class="product-filter">
             <fieldset class="product-filter__checkboxes">
               <legend class="product-filter__title">Цвет</legend>
@@ -175,7 +176,8 @@
                   <figcaption class="goods__name">Любительская селфи-палка <span class="goods__price"></span>500 руб.</figcaption>
               </figure>
           </li>
-      </ul><!--/.goods-->
+        </ul><!--/.goods-->
+      </div><!--/.container-->
     </section><!--/.product-->
   </main>
   <footer class="footer">
