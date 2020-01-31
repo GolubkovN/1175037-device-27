@@ -45,9 +45,29 @@
         </ul><!--/.pannel__list-->
       </div><!--/.pannel-->
       <nav class="nav header__nav">
-        <div class="nav__select">
-          <a href="#" class="nav__link">Каталог товаров</a>
-        </div><!--/.nav__item-->
+        <div class="nav-select">
+          <a href="#" class="nav-select__title">Каталог товаров</a>
+          <ul class="nav-select__list">
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Виртуальная реальность</a>
+            </li>
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Моноподы для селфи</a>
+            </li>
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Экшн-камеры</a>
+            </li>
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Фитнес-браслеты</a>
+            </li>
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Умные часы</a>
+            </li>
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Квадрокоптеры</a>
+            </li>
+          </ul><!--/.nav-select__list-->
+        </div><!--/.nav-select-->
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#" class="nav__link">Доставка</a>
@@ -162,7 +182,7 @@
           <li class="sections__item">
             <a href="#" class="sections__link">
               <article class="sections__block">
-                <img src="https://via.placeholder.com/160x160" alt="Виртуальная реальность" class="sections__img">
+                <img src="./img/sections/popular-1.png" alt="Раздел виртуальная реальность" class="sections__img">
                 <h4 class="sections__name">Виртуальная реальность</h4>
               </article>
             </a>
@@ -170,7 +190,7 @@
           <li class="sections__item">
             <a href="#" class="sections__link">
               <article class="sections__block">
-                <img src="https://via.placeholder.com/160x160" alt="Моноподы для селфи" class="sections__img">
+                <img src="./img/sections/popular-2.png" alt="Раздел с моноподами для селфи" class="sections__img">
                 <h4 class="sections__name">Моноподы для селфи</h4>
               </article>
             </a>
@@ -178,7 +198,7 @@
           <li class="sections__item">
             <a href="#" class="sections__link">
               <article class="sections__block">
-                <img src="https://via.placeholder.com/160x160" alt="Экшн-камеры" class="sections__img">
+                <img src="./img/sections/popular-3.png" alt="Раздел экшн-камеры" class="sections__img">
                 <h4 class="sections__name">Экшн-камеры</h4>
               </article>
             </a>
@@ -186,7 +206,7 @@
           <li class="sections__item">
             <a href="#" class="sections__link">
               <article class="sections__block">
-                <img src="https://via.placeholder.com/160x160" alt="Фитнес-браслеты" class="sections__img">
+                <img src="./img/sections/popular-4.png" alt="Раздел с фитнес-браслетами" class="sections__img">
                 <h4 class="sections__name">Фитнес-браслеты</h4>
               </article>
             </a>
@@ -194,7 +214,7 @@
           <li class="sections__item">
             <a href="#" class="sections__link">
               <article class="sections__block">
-                <img src="https://via.placeholder.com/160x160" alt="Умные часы" class="sections__img">
+                <img src="./img/sections/popular-5.png" alt="Раздел умные часы" class="sections__img">
                 <h4 class="sections__name">Умные часы</h4>
               </article>
             </a>
@@ -202,7 +222,7 @@
           <li class="sections__item">
             <a href="#" class="sections__link">
               <article class="sections__block">
-                <img src="https://via.placeholder.com/160x160" alt="Квадрокоптеры" class="sections__img">
+                <img src="./img/sections/poppular-6.png" alt="Раздел квадрокоптеры" class="sections__img">
                 <h4 class="sections__name">Квадрокоптеры</h4>
               </article>
             </a>
@@ -250,20 +270,45 @@
         </div><!--/.services__slider-->
       </div><!--container-->
     </section><!--services-->
+    <section class="modal modal--show">
+      <div class="modal__content">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form action="" class="modal__feedback">
+          <button class="button-close" type="button">Закрыть</button>
+          <p>
+            <label>
+              Ваше имя:
+              <input type="text" name="user-name" placeholder="Имя Фамилия">
+            </label>
+            <label>
+              Ваш e-mail:
+              <input type="email" name="user-email" placeholder="email@example.com">
+            </label>
+          </p>
+          <p>
+            <label>
+              Текст письма:
+              <textarea name="" id="" cols="50" rows="10" name="letter" placeholder="В свободной форме"></textarea>
+            </label>
+          </p>
+          <button class="btn modal__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section><!--/.modal-->
     <section class="logos">
       <div class="container">
         <ul class="logos__list">
           <li class="logos__item">
-            <img src="./img/logos/logo-1.png" alt="Dji" width="260" height="100" class="logos__img">
+            <img src="./img/logos/logo-1.png" alt="логотип Dji" width="260" height="100" class="logos__img">
           </li>
           <li class="logos__item">
-            <img src="./img/logos/logo-2.png" alt="Dji" width="260" height="100" class="logos__img">
+            <img src="./img/logos/logo-2.png" alt="логотип SP Gardens" width="260" height="100" class="logos__img">
           </li>
           <li class="logos__item">
-            <img src="./img/logos/logo-3.png" alt="Dji" width="260" height="100" class="logos__img">
+            <img src="./img/logos/logo-3.png" alt="доготип Go Pro" width="260" height="100" class="logos__img">
           </li>
           <li class="logos__item">
-            <img src="./img/logos/logo-1.png" alt="Dji" width="260" height="100" class="logos__img">
+            <img src="./img/logos/logo-1.png" alt="логотип Vive" width="260" height="100" class="logos__img">
           </li>
         </ul><!--/.logos__list-->
       </div><!--/.container-->
@@ -306,6 +351,12 @@
         </article><!--/.about-us__item-->
       </div><!--/.container-->
     </section><!--/.about-us-->
+    <secton class="popup">
+      <a href="#" class="popup__link">
+        <button class="popup__close">закрыть</button>
+        <img src="./img/map-big.jpg" alt="Магазин находится по адресу: город Москва, улица Строителей, 15">
+      </a>
+    </secton>
   </main>
   <footer class="footer">
     <div class="container">
@@ -340,7 +391,7 @@
         </ul><!--/.pannel__list-->
       </div><!--/.pannel-->
       <div class="footer__info">
-        <span class="footer__address">г. Москва, ул. Строителей, 15</span>
+        <address class="footer__address">г. Москва, ул. Строителей, 15</address>
         <ul class="nav footer__nav">
           <li class="nav__item">
             <a href="#" class="nav__link">Доставка</a>
@@ -356,9 +407,9 @@
       </div><!--/.footer__info-->
       <div class="footer__extras">
         <div class="socials">
-          <a href="" class="socials__link">Facebook</a>
-          <a href="" class="socials__link">Instagram</a>
-          <a href="" class="socials__link">Twitter</a>
+          <a href="" class="socials__link" aria-label="Facebook">Facebook</a>
+          <a href="" class="socials__link" aria-label="Instagram">Instagram</a>
+          <a href="" class="socials__link" aria-label="Twitter">Twitter</a>
         </div>
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright">
           <img src="./img/footer/logo-htmlacademy.svg" width="27" height="35"  alt="Логотип Html академии">

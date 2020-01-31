@@ -10,9 +10,9 @@
 <body>
   <header class="header">
     <div class="container">
-      <a href="index.html" class="logo">
+      <div class="logo">
         <img src="./img/logo/logo-black.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
-      </a>
+      </div>
       <div class="pannel">
         <form class="search pannel__search">
           <input type="search" placeholder="Поиск по сайту">
@@ -45,8 +45,28 @@
         </ul><!--/.pannel__list-->
       </div><!--/.pannel-->
       <nav class="nav header__nav">
-        <div class="nav__select">
-          <a href="#" class="nav__link">Каталог товаров</a>
+        <div class="nav-select">
+          <a href="#" class="nav-select__title">Каталог товаров</a>
+          <ul class="nav-select__list">
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Виртуальная реальность</a>
+            </li>
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Моноподы для селфи</a>
+            </li>
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Экшн-камеры</a>
+            </li>
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Фитнес-браслеты</a>
+            </li>
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Умные часы</a>
+            </li>
+            <li class="nav-select__item">
+              <a href="#" class="nav-select__link">Квадрокоптеры</a>
+            </li>
+          </ul>
         </div><!--/.nav__item-->
         <ul class="nav__list">
           <li class="nav__item">
@@ -121,11 +141,11 @@
             <fieldset class="product-filter__radio">
               <legend class="product-filter__title">Bluetooth</legend>
                 <div class="product-filter__item">
-                  <input type="radio" class="product-filter__radio-input" id="radio-1" name="bluetooth">
+                  <input type="radio" class="product-filter__radio-input" id="radio-1" name="bluetooth" value="there-is">
                   <label for="radio-1" class="product-filter__radio-label">Есть</label>
                 </div>
                 <div class="product-filter__item">
-                  <input type="radio" class="product-filter__radio-input" id="radio-2" name="bluetooth">
+                  <input type="radio" class="product-filter__radio-input" id="radio-2" name="bluetooth" value="not">
                   <label for="radio-2" class="product-filter__radio-label">Нет</label>
                 </div>
             </fieldset><!--/.product-filter__radio-->
@@ -210,7 +230,7 @@
         </ul><!--/.pannel__list-->
       </div><!--/.pannel-->
       <div class="footer__info">
-        <span class="footer__address">г. Москва, ул. Строителей, 15</span>
+        <address class="footer__address">г. Москва, ул. Строителей, 15</address>
         <ul class="nav footer__nav">
           <li class="nav__item">
             <a href="#" class="nav__link">Доставка</a>
@@ -226,9 +246,9 @@
       </div><!--/.footer__info-->
       <div class="footer__extras">
         <div class="socials">
-          <a href="" class="socials__link">Facebook</a>
-          <a href="" class="socials__link">Instagram</a>
-          <a href="" class="socials__link">Twitter</a>
+          <a href="" class="socials__link" aria-label="Facebook">Facebook</a>
+          <a href="" class="socials__link" aria-label="Instagram">Instagram</a>
+          <a href="" class="socials__link" aria-label="Twitter">Twitter</a>
         </div>
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright">
           <img src="./img/footer/logo-htmlacademy.svg" width="27" height="35"  alt="Логотип Html академии">
