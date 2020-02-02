@@ -270,31 +270,6 @@
         </div><!--/.services__slider-->
       </div><!--container-->
     </section><!--services-->
-    <section class="modal modal--show">
-      <div class="modal__content">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <form action="" class="modal__feedback">
-          <button class="button-close" type="button">Закрыть</button>
-          <p>
-            <label>
-              Ваше имя:
-              <input type="text" name="user-name" placeholder="Имя Фамилия">
-            </label>
-            <label>
-              Ваш e-mail:
-              <input type="email" name="user-email" placeholder="email@example.com">
-            </label>
-          </p>
-          <p>
-            <label>
-              Текст письма:
-              <textarea name="" id="" cols="50" rows="10" name="letter" placeholder="В свободной форме"></textarea>
-            </label>
-          </p>
-          <button class="btn modal__button" type="submit">Отправить</button>
-        </form>
-      </div>
-    </section><!--/.modal-->
     <section class="logos">
       <div class="container">
         <ul class="logos__list">
@@ -351,12 +326,6 @@
         </article><!--/.about-us__item-->
       </div><!--/.container-->
     </section><!--/.about-us-->
-    <secton class="popup">
-      <a href="#" class="popup__link">
-        <button class="popup__close">закрыть</button>
-        <img src="./img/map-big.jpg" alt="Магазин находится по адресу: город Москва, улица Строителей, 15">
-      </a>
-    </secton>
   </main>
   <footer class="footer">
     <div class="container">
@@ -417,5 +386,34 @@
       </div><!--/.footer__extras-->
     </div><!--/.container-->
   </footer><!--/.footer-->
+  <div class="modal modal--show">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form action="" class="modal__form">
+      <button class="modal__close" type="button">Закрыть</button>
+      <div class="modal__group">
+        <label>
+          Ваше имя:
+          <input type="text" name="user-name" placeholder="Имя Фамилия">
+        </label>
+        <label>
+          Ваш e-mail:
+          <input type="email" name="user-email" placeholder="email@example.com">
+        </label>
+      </div>
+      <div class="modal__group">
+        <label>
+          Текст письма:
+          <textarea name="letter" id="" cols="50" rows="10" name="letter" placeholder="В свободной форме"></textarea>
+        </label>
+      </div>
+      <button class="btn modal__button" type="submit">Отправить</button>
+    </form>
+  </div><!--/.modal-->
+  <div class="popup">
+    <button class="popup__close">закрыть</button>
+    <a href="#" class="popup__link">
+      <img src="./img/map-big.jpg" alt="Магазин находится по адресу: город Москва, улица Строителей, дом 15">
+    </a>
+  </div>
 </body>
 </html>
