@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>HTML Academy: Девайс</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="logo">
-        <img src="./img/logo/logo-black.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
+        <img src="./img/logo/device.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
       </div>
       <div class="pannel">
-        <form class="search pannel__search">
+        <form class="pannel__search">
           <input type="search" placeholder="Поиск по сайту">
           <button type="submit" class="search__button">Найти</button>
         </form><!--/.pannel__search-->
         <ul class="pannel__list">
           <li class="pannel__item">
             <div class="pannel__authorization">
-              <a href="#" class="pannel__button">
+              <a href="#" class="pannel__button pannel__button--user">
                 Войти
               </a>
               <div class="pannel__user">
@@ -33,12 +35,12 @@
             </div><!--/.pannel__authorization-->
           </li><!--/.pannel__item-->
           <li class="pannel__item">
-            <a href="#" class="pannel__button">
+            <a href="#" class="pannel__button pannel__button--compare">
               Сравнить
             </a>
           </li><!--/.pannel__item-->
           <li class="pannel__item">
-            <a href="#" class="pannel__button">
+            <a href="#" class="pannel__button pannel__button--cart">
               Корзина
             </a>
           </li><!--/.pannel__item-->
@@ -84,6 +86,7 @@
   </header><!--/.header-->
   <main>
     <section class="hero">
+      <h2 class="visually-hidden">Промо-слайдер</h2>
       <div class="container">
         <ul class="hero-slider">
           <li class="hero-slider__item">
@@ -105,9 +108,9 @@
               </div><!--/.hero-slider__buttons-->
               <table class="hero-slider__definitions">
                 <tr>
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
+                  <th>8,5 м</th>
+                  <th>5 кг</th>
+                  <th>Карбон</th>
                 </tr>
                 <tr>
                   <td>Длина палки</td>
@@ -136,7 +139,7 @@
               </div><!--/.hero-slider__buttons-->
               <table class="hero-slider__definitions">
                 <tr>
-                  <td>48 часов</td>
+                  <th>48 часов</th>
                 </tr>
                 <tr>
                   <td>Без подзарядки</td>
@@ -163,8 +166,8 @@
               </div><!--/.hero-slider__buttons-->
               <table class="hero-slider__definitions">
                 <tr>
-                  <td>800 м</td>
-                  <td>50 м</td>
+                  <th>800 м</th>
+                  <th>50 м</th>
                 </tr>
                 <tr>
                   <td>Дальность полета</td>
@@ -177,54 +180,54 @@
       </div><!--/.container-->
     </section><!--/.hero-->
     <section class="sections">
-      <div class="container">
+      <h2 class="visually-hidden">Разделы</h2>
         <ul class="sections__list">
           <li class="sections__item">
             <a href="#" class="sections__link">
-              <article class="sections__block">
-                <img src="./img/sections/popular-1.png" alt="Раздел виртуальная реальность" class="sections__img">
-                <h4 class="sections__name">Виртуальная реальность</h4>
-              </article>
+              <div class="sections__image">
+                <img src="./img/sections/popular-1.png" alt="Раздел виртуальная реальность"  width:="97px" height="55px" class="sections__img">
+              </div>
+              <h4 class="sections__name">Виртуальная реальность</h4>
             </a>
           </li><!--/.sections__item-->
           <li class="sections__item">
             <a href="#" class="sections__link">
-              <article class="sections__block">
-                <img src="./img/sections/popular-2.png" alt="Раздел с моноподами для селфи" class="sections__img">
-                <h4 class="sections__name">Моноподы для селфи</h4>
-              </article>
+              <div class="sections__image">
+                <img src="./img/sections/popular-2.png" alt="Раздел моноподы для селфи"  width:="86px" height="117px" class="sections__img sections__img--bottom">
+              </div>
+              <h4 class="sections__name">Моноподы для селфи</h4>
             </a>
           </li><!--/.sections__item-->
           <li class="sections__item">
             <a href="#" class="sections__link">
-              <article class="sections__block">
-                <img src="./img/sections/popular-3.png" alt="Раздел экшн-камеры" class="sections__img">
-                <h4 class="sections__name">Экшн-камеры</h4>
-              </article>
+              <div class="sections__image">
+                <img src="./img/sections/popular-3.png" alt="Раздел Экшн-камеры"  width="71px" height="87px" class="sections__img">
+              </div>
+              <h4 class="sections__name">Экшн-камеры</h4>
             </a>
           </li><!--/.sections__item-->
           <li class="sections__item">
             <a href="#" class="sections__link">
-              <article class="sections__block">
-                <img src="./img/sections/popular-4.png" alt="Раздел с фитнес-браслетами" class="sections__img">
-                <h4 class="sections__name">Фитнес-браслеты</h4>
-              </article>
+              <div class="sections__image">
+                <img src="./img/sections/popular-4.png" alt="Раздел Фитнес-браслеты"  width:="107px" height="65px" class="sections__img">
+              </div>
+              <h4 class="sections__name">Фитнес-браслеты</h4>
             </a>
           </li><!--/.sections__item-->
           <li class="sections__item">
             <a href="#" class="sections__link">
-              <article class="sections__block">
-                <img src="./img/sections/popular-5.png" alt="Раздел умные часы" class="sections__img">
-                <h4 class="sections__name">Умные часы</h4>
-              </article>
+              <div class="sections__image">
+                <img src="./img/sections/popular-5.png" alt="Раздел Умные часы"  width:="56px" height="98px" class="sections__img">
+              </div>
+              <h4 class="sections__name">Умные часы</h4>
             </a>
           </li><!--/.sections__item-->
           <li class="sections__item">
             <a href="#" class="sections__link">
-              <article class="sections__block">
-                <img src="./img/sections/poppular-6.png" alt="Раздел квадрокоптеры" class="sections__img">
-                <h4 class="sections__name">Квадрокоптеры</h4>
-              </article>
+              <div class="sections__image">
+                <img src="./img/sections/poppular-6.png" alt="Раздел Квадрокоптеры"  width:="132px" height="69px" class="sections__img">
+              </div>
+              <h4 class="sections__name">Квадрокоптеры</h4>
             </a>
           </li><!--/.sections__item-->
         </ul><!--/.sections__list-->
@@ -240,58 +243,69 @@
           </div><!--/.servicer__filter-->
           <ul class="servicer__list">
             <li class="services__item">
-              <h2 class="services__title">Доставка</h2>
-              <p class="srvices__text">
-                Мы с удовольствием доставим ваш товар прямо к вашему
-                подъезду совершенно бесплатно! Ведь мы неплохо 
-                заработаем, поднимая его на ваш этаж.
-              </p>
+              <div class="services__group">
+                <h2 class="services__title">Доставка</h2>
+                <p class="srvices__text">
+                  Мы с удовольствием доставим ваш товар прямо к вашему
+                  подъезду совершенно бесплатно! Ведь мы неплохо 
+                  заработаем, поднимая его на ваш этаж.
+                </p>
+              </div>
               <img src="./img/slider-2/delivery.svg" alt="доставка" width="136" height="164" class="services__img">
             </li><!--/.services__slider__item-->
             <li class="services__item">
-              <h2 class="services__title">Гарантия</h2>
-              <p class="srvices__text">
-                Если из-за возгорания купленного у нас товара у вас сгорит 
-                дом — не переживайте, мы выдадим вам новый. 
-                Товар, не дом, конечно же.
-              </p>
+              <div class="services__group">
+                <h2 class="services__title">Гарантия</h2>
+                <p class="srvices__text">
+                  Если из-за возгорания купленного у нас товара у вас сгорит 
+                  дом — не переживайте, мы выдадим вам новый. 
+                  Товар, не дом, конечно же.
+                </p>
+              </div>
               <img src="./img/slider-2/warranty.svg" alt="доставка" width="136" height="164" class="services__img">
             </li><!--/.services__slider__item-->
             <li class="services__item">
-              <h2 class="services__title">Кредит</h2>
-              <p class="srvices__text">
-                Залезть в долговую яму стало проще! Кредитные 
-                консультанты подберут для вас наиболее выгодные 
-                условия кредита. Выгодные для нашего банка, разумеется.>
-              </p>
+              <div class="services__group">
+                <h2 class="services__title">Кредит</h2>
+                <p class="srvices__text">
+                  Залезть в долговую яму стало проще! Кредитные 
+                  консультанты подберут для вас наиболее выгодные 
+                  условия кредита. Выгодные для нашего банка, разумеется.>
+                </p>
+              </div>
               <img src="./img/slider-2/credit.svg" alt="доставка" width="136" height="164" class="services__img">
             </li><!--/.services__item-->
           </ul><!--/.servicer_slides-->
         </div><!--/.services__slider-->
-      </div><!--container-->
     </section><!--services-->
     <section class="logos">
+      <h2 class="visually-hidden">Слайдер с сервисами</h2>
       <div class="container">
         <ul class="logos__list">
           <li class="logos__item">
             <img src="./img/logos/logo-1.png" alt="логотип Dji" width="260" height="100" class="logos__img">
+            <img src="./img/logos/logo-grey-1-jpg.jpg" width="260" height="100"  class="logos__img logos__img-opacity">
           </li>
           <li class="logos__item">
             <img src="./img/logos/logo-2.png" alt="логотип SP Gardens" width="260" height="100" class="logos__img">
+            <img src="./img/logos/logo-grey-2-jpg.jpg" width="260" height="100" class="logos__img logos__img-opacity">
           </li>
           <li class="logos__item">
             <img src="./img/logos/logo-3.png" alt="доготип Go Pro" width="260" height="100" class="logos__img">
+            <img src="./img/logos/logo-grey-3-jpg.jpg" width="260" height="100" class="logos__img logos__img-opacity">
           </li>
           <li class="logos__item">
-            <img src="./img/logos/logo-1.png" alt="логотип Vive" width="260" height="100" class="logos__img">
+            <img src="./img/logos/logo-4.png" alt="логотип Vive" width="260" height="100" class="logos__img">
+            <img src="./img/logos/logo-grey-4-jpg.jpg" width="260" height="100" class="logos__img logos__img-opacity">
           </li>
         </ul><!--/.logos__list-->
       </div><!--/.container-->
     </section><!--/.logos-->
     <section class="about-us">
+      <h2 class="visually-hidden">Информация о магазине Девайс</h2>
       <div class="container">
         <article class="about-us__item">
-          <span class="abot-us__title">О нас</span>
+          <span class="about-us__title">О нас</span>
           <p class="about-us__text">
             Огромный выбор гаджетов не оставит равнодушным гика, 
             который есть в каждом из нас.
@@ -300,7 +314,7 @@
             Мы можем доставить ваш товар в самые отдаленные точки 
             России! DEVICE работает со многими транспортными компаниями:
           </p>
-          <ul class="partners about-us__partners">
+          <ul class="partners about-us__partners ">
             <li class="partners__item">
               <a href="#" class="partners__link">Деловые линии</a>
             </li>
@@ -329,31 +343,31 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <a href="index.html" class="logo">
-        <img src="./img/footer/device.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
-      </a>
+      <div class="logo">
+        <img src="./img/footer/device-footer.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
+      </div>
       <div class="pannel">
         <ul class="pannel__list">
           <li class="pannel__item">
             <div class="pannel__authorization">
-              <a href="#" class="pannel__button">
+              <a href="#" class="pannel__button pannel__button--white pannel__button--white-user">
                 Войти
               </a>
               <div class="pannel__user">
-                <span class="pannel__user-name">
+                <span class="pannel__user-name pannel__user-name--white">
                   Валентин Петухов
                 </span>
-                <a href="#" class="pannel__log-out">Выйти</a>
+                <a href="#" class="pannel__log-out pannel__log-out--white">Выйти</a>
               </div>
             </div><!--/.pannel__authorization-->
           </li><!--/.pannel__item-->
           <li class="pannel__item">
-            <a href="#" class="pannel__button">
+            <a href="#" class="pannel__button pannel__button--white pannel__button--white-compare">
               Сравнить
             </a>
           </li><!--/.pannel__item-->
           <li class="pannel__item">
-            <a href="#" class="pannel__button">
+            <a href="#" class="pannel__button  pannel__button--white pannel__button--white-cart">
               Корзина
             </a>
           </li><!--/.pannel__item-->
@@ -363,22 +377,22 @@
         <address class="footer__address">г. Москва, ул. Строителей, 15</address>
         <ul class="nav footer__nav">
           <li class="nav__item">
-            <a href="#" class="nav__link">Доставка</a>
+            <a href="#" class="nav__link nav__link--white">Доставка</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Горантия</a>
+            <a href="#" class="nav__link nav__link--white">Горантия</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Контакты</a>
+            <a href="#" class="nav__link nav__link--white">Контакты</a>
           </li>
         </ul>
         <a href="tel:+1234567890" class="footer__tel">Тел.: +7 (495) 495-95-95</a>
       </div><!--/.footer__info-->
       <div class="footer__extras">
         <div class="socials">
-          <a href="" class="socials__link" aria-label="Facebook">Facebook</a>
-          <a href="" class="socials__link" aria-label="Instagram">Instagram</a>
-          <a href="" class="socials__link" aria-label="Twitter">Twitter</a>
+          <a href="#" class="socials__link" aria-label="Facebook">Facebook</a>
+          <a href="#" class="socials__link" aria-label="Instagram">Instagram</a>
+          <a href="#" class="socials__link" aria-label="Twitter">Twitter</a>
         </div>
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright">
           <img src="./img/footer/logo-htmlacademy.svg" width="27" height="35"  alt="Логотип Html академии">
@@ -406,7 +420,7 @@
           <textarea name="letter" id="" cols="50" rows="10" name="letter" placeholder="В свободной форме"></textarea>
         </label>
       </div>
-      <button class="btn modal__button" type="submit">Отправить</button>
+      <button class="btn" type="submit">Отправить</button>
     </form>
   </div><!--/.modal-->
   <div class="popup">
