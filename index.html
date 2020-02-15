@@ -10,7 +10,7 @@
   <title>HTML Academy: Девайс</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header header--index">
     <div class="container">
       <div class="logo">
         <img src="./img/logo/device.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
@@ -52,28 +52,30 @@
         <ul class="nav-select__menu">
           <li class="nav-select__unit" tabindex="0">
             <a href="#" class="nav-select__title">Каталог товаров</a>
-            <ul class="nav-select__list">
-              <li class="nav-select__item">
-                <a href="#" class="nav-select__link">Виртуальная реальность</a>
-              </li>
-              <li class="nav-select__item">
-                <a href="#" class="nav-select__link">Моноподы для селфи</a>
-              </li>
-              <li class="nav-select__item">
-                <a href="#" class="nav-select__link">Экшн-камеры</a>
-              </li>
-              <li class="nav-select__item">
-                <a href="#" class="nav-select__link">Фитнес-браслеты</a>
-              </li>
-              <li class="nav-select__item">
-                <a href="#" class="nav-select__link">Умные часы</a>
-              </li>
-              <li class="nav-select__item">
-                <a href="#" class="nav-select__link">Квадрокоптеры</a>
-              </li>
-            </ul><!--/.nav-select__list-->
-          </li><!--/.nav-select-->
-        </ul>
+            <div class="nav-select__wrapper nav-select__wrapper--index">
+              <ul class="nav-select__list">
+                <li class="nav-select__item">
+                  <a href="#" class="nav-select__link">Виртуальная реальность</a>
+                </li>
+                <li class="nav-select__item">
+                  <a href="#" class="nav-select__link">Моноподы для селфи</a>
+                </li>
+                <li class="nav-select__item">
+                  <a href="#" class="nav-select__link">Экшн-камеры</a>
+                </li>
+                <li class="nav-select__item">
+                  <a href="#" class="nav-select__link">Фитнес-браслеты</a>
+                </li>
+                <li class="nav-select__item">
+                  <a href="#" class="nav-select__link">Умные часы</a>
+                </li>
+                <li class="nav-select__item">
+                  <a href="#" class="nav-select__link">Квадрокоптеры</a>
+                </li>
+              </ul><!--/.nav-select__list-->
+            </div>
+          </li><!--/.nav-select__unit-->
+        </ul><!--/.nav-select__menu-->
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#" class="nav__link">Доставка</a>
@@ -93,13 +95,13 @@
       <h2 class="visually-hidden">Промо-слайдер</h2>
       <div class="container">
         <ul class="hero-slider">
-          <li class="hero-slider__item hero-slider__item--visual">
+          <li class="hero-slider__item  hero-slider__item--visual">
            <div class="hero-slider__pic">
             <img src="./img/slider-1/slider-1-png@3x.png" width="384" height="486" alt="Самая длинная палка для селфи " class="hero-slider__img">
            </div>
             <div class="hero-slider__desc">
               <div class="hero-slider__number">01</div>
-              <h1 class="hero-slider__title">Делай селфи,  как Бен Стиллер!</h1>
+              <h1 class="hero-slider__title">Делай селфи ,  как Бен Стиллер!</h1>
               <p class="hero-slider__text">
                 Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -131,7 +133,7 @@
               <img src="./img/slider-1/slider-2-png@2x.png" width="345" height="485" alt="Мотивирующий фитнес-брослет" class="hero-slider__img">
             </div>
             <div class="hero-slider__desc">
-              <span class="hero-slider__number">02</span>
+              <div class="hero-slider__number">02</div>
               <h1 class="hero-slider__title">Худеем правильно!</h1>
               <p class="hero-slider__text">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
@@ -160,7 +162,7 @@
               <img src="./img/slider-1/slider-3-png@2x.png" width="526" height="334" alt="Квадрокоптер" class="hero-slider__img">
             </div>
             <div class="hero-slider__desc">
-              <span class="hero-slider__number">03</span>
+              <div class="hero-slider__number">03</div>
               <h1 class="hero-slider__title">Порхает как бабочка, жалит как пчела!</h1>
               <p class="hero-slider__text">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -246,14 +248,14 @@
     <section class="services">
       <div class="container">
         <div class="services__slider">
-          <div class="servicer__filter">
-            <a href="#" class="btn servicer__link servicer__link--active" data-fiter="delivery">Доставка</a>
-            <a href="#" class="btn servicer__link" data-filter="warranty">Гарантия</a>
-            <a href="#" class="btn servicer__link" data-filter="credit">Кредит</a>
-          </div><!--/.servicer__filter-->
+          <div class="services__filter">
+            <a href="#" class="btn services__link is-active" data-filter="delivery">Доставка</a>
+            <a href="#" class="btn services__link" data-filter="warranty">Гарантия</a>
+            <a href="#" class="btn services__link" data-filter="credit">Кредит</a>
+          </div><!--/.services__filter-->
           <div class="services__tabs">
-            <ul class="servicer__list">
-              <li class="services__item delivery">
+            <ul class="services__list">
+              <li class="services__item services__item--active delivery">
                 <div class="services__group">
                   <h2 class="services__title">Доставка</h2>
                   <p class="srvices__text">
@@ -286,12 +288,12 @@
                 </div>
                 <img src="./img/slider-2/credit.svg" alt="доставка" width="136" height="164" class="services__img">
               </li><!--/.services__item-->
-            </ul><!--/.servicer_slides-->
+            </ul><!--/.services_slides-->
           </div>
         </div><!--/.services__slider-->
     </section><!--services-->
     <section class="logos">
-      <h2 class="visually-hidden">Слайдер с сервисами</h2>
+      <h2 class="visually-hidden">Табы с сервисами</h2>
       <div class="container">
         <ul class="logos__list">
           <li class="logos__item">
@@ -315,7 +317,6 @@
     </section><!--/.logos-->
     <section class="about-us">
       <h2 class="visually-hidden">Информация о магазине Девайс</h2>
-      <div class="container">
         <div class="about-us__wrapper">
           <article class="about-us__item">
             <span class="about-us__title">О нас</span>
@@ -346,13 +347,12 @@
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
               проверить работоспособность покупки. Всякое бывает.
             </p>
-            <a href="#" class="about-us__map">
+            <a href="#" class="about-us__map popup__open">
               <img src="./img/map-jpg.jpg" alt="Карта как к нам добраться" width="560" height="222">
             </a>
-            <a href="#" class="btn partners__btn">Напишите нам</a>
+            <a href="#" class="btn modal__open">Напишите нам</a>
           </article><!--/.about-us__item-->
         </div>
-      </div><!--/.container-->
     </section><!--/.about-us-->
   </main>
   <footer class="footer">
@@ -417,32 +417,32 @@
       </div><!--/.footer__extras-->
     </div><!--/.container-->
   </footer><!--/.footer-->
-  <div class="modal modal--show">
-    <h2 class="visually-hidden">Форма обратной связи</h2>
+  <div class="modal ">
     <form action="" class="modal__form">
       <button class="modal__close" type="button">Закрыть</button>
-      <div class="form-group">
-        <label>
-          Ваше имя:
-          <input type="text" name="user-name" placeholder="Имя Фамилия">
-        </label>
-        <label>
-          Ваш e-mail:
-          <input type="email" name="user-email" placeholder="email@example.com">
-        </label>
+      <div class="modal__wrapper">
+        <div class="form-group">
+          <label for="ame">Ваше имя:</label>
+          <input type="text" id="name" name="user-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="form-group">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" id="email" name="user-email" placeholder="email@example.com">
+        </div>
       </div>
       <div class="form-group">
-        <label>
-          Текст письма:
-          <textarea name="letter" id="" cols="50" rows="10" name="letter" placeholder="В свободной форме"></textarea>
-        </label>
+        <label for="letter">Текст письма:</label>
+        <textarea name="letter" id="letter" rows="10" name="letter" placeholder="В свободной форме"></textarea>
       </div>
-      <button class="btn" type="submit">Отправить</button>
+      <button class="btn modal__btn" type="submit">Отправить</button>
     </form>
   </div><!--/.modal-->
   <div class="popup">
     <button class="popup__close">закрыть</button>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473154!2d37.52742931538804!3d55.6870340045307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1580734151232!5m2!1sru!2sua" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </div>
+  <script src="./js/tab.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/popup.js"></script>
 </body>
 </html>

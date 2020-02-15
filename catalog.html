@@ -54,28 +54,30 @@
           <ul class="nav-select__menu">
             <li class="nav-select__unit" tabindex="0">
               <a href="#" class="nav-select__title">Каталог товаров</a>
-              <ul class="nav-select__list">
-                <li class="nav-select__item">
-                  <a href="#" class="nav-select__link">Виртуальная реальность</a>
-                </li>
-                <li class="nav-select__item">
-                  <a href="#" class="nav-select__link">Моноподы для селфи</a>
-                </li>
-                <li class="nav-select__item">
-                  <a href="#" class="nav-select__link">Экшн-камеры</a>
-                </li>
-                <li class="nav-select__item">
-                  <a href="#" class="nav-select__link">Фитнес-браслеты</a>
-                </li>
-                <li class="nav-select__item">
-                  <a href="#" class="nav-select__link">Умные часы</a>
-                </li>
-                <li class="nav-select__item">
-                  <a href="#" class="nav-select__link">Квадрокоптеры</a>
-                </li>
-              </ul><!--/.nav-select__list-->
-            </li><!--/.nav-select-->
-          </ul>
+              <div class="nav-select__wrapper">
+                <ul class="nav-select__list">
+                  <li class="nav-select__item">
+                    <a href="#" class="nav-select__link">Виртуальная реальность</a>
+                  </li>
+                  <li class="nav-select__item">
+                    <a href="#" class="nav-select__link">Моноподы для селфи</a>
+                  </li>
+                  <li class="nav-select__item">
+                    <a href="#" class="nav-select__link">Экшн-камеры</a>
+                  </li>
+                  <li class="nav-select__item">
+                    <a href="#" class="nav-select__link">Фитнес-браслеты</a>
+                  </li>
+                  <li class="nav-select__item">
+                    <a href="#" class="nav-select__link">Умные часы</a>
+                  </li>
+                  <li class="nav-select__item">
+                    <a href="#" class="nav-select__link">Квадрокоптеры</a>
+                  </li>
+                </ul><!--/.nav-select__list-->
+              </div>
+            </li><!--/.nav-select__unit-->
+          </ul><!--/.nav-select__menu-->
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Доставка</a>
@@ -125,9 +127,9 @@
                   </ul>
                 </li>
               </ul>
-              <div class="product-sorting__arrow-row">
-                <a href="" class="product-sorting__arrow">по убыванию</a>
-                <a href="" class="product-sorting__arrow">по возрастанию</a>
+              <div class="product-sorting__arrows">
+                <a href="" class="product-sorting__arrow product-sorting__arrow--up">по убыванию</a>
+                <a href="" class="product-sorting__arrow product-sorting__arrow--down">по возрастанию</a>
               </div>
             </div>
           </div><!--/.container-->
@@ -139,14 +141,14 @@
               <form action="#" class="product-filter">
                 <fieldset class="product-filter__group">
                   <legend class="product-filter__title">Стоимость</legend>
-                  <input type="range" name="cost" min="0" max="10000" step="1" />
+                  <input type="range" name="cost" min="0" max="10000" step="1">
                 </fieldset>
                 <fieldset class="product-filter__group">
                   <legend class="product-filter__title">Цвет</legend>
                   <div class="product-filter__item">
                     <label class="product-filter__check-label">
-                      <input type="checkbox" name="color" class="product-filter__check-input"/>
-                      <div class="product-filter__text"></div>
+                      <input type="checkbox" name="color" class="product-filter__check-input">
+                      <div class="product-filter__text">Чёрный</div>
                     </label>
                   </div>
                   <div class="product-filter__item">
@@ -157,7 +159,7 @@
                   </div>
                   <div class="product-filter__item">
                     <label class="product-filter__check-label">
-                      <input type="checkbox" name="color" class="product-filter__check-input"/>
+                      <input type="checkbox" name="color" class="product-filter__check-input" checked disabled>
                       <div class="product-filter__text">Синий</div>
                     </label>
                   </div>
@@ -176,11 +178,11 @@
                 <fieldset class="product-filter__group">
                   <legend class="product-filter__title">Bluetooth</legend>
                   <div class="product-filter__item">
-                    <input type="radio" class="product-filter__radio-input" id="radio-1" name="bluetooth" value="there-is" checked/>
+                    <input type="radio" class="product-filter__radio-input" id="radio-1" name="bluetooth" value="there-is" checked>
                     <label for="radio-1" class="product-filter__radio-label">Есть</label>
                   </div>
                   <div class="product-filter__item">
-                    <input type="radio" class="product-filter__radio-input" id="radio-2" name="bluetooth" value="not"/>
+                    <input type="radio" class="product-filter__radio-input" id="radio-2" name="bluetooth" value="not">
                     <label for="radio-2" class="product-filter__radio-label">Нет</label>
                   </div>
                 </fieldset><!--/.product-filter__radio-->
@@ -216,9 +218,7 @@
                     </div>
                   </div><!--/.goods__content-->
                   <div class="goods__name">
-                    <a href="#" class="goods__link"
-                      >Профессиональная селфи-палка
-                    </a>
+                    <a href="#" class="goods__link">Профессиональная селфи-палка</a>
                     <span class="goods__price">1 500 руб.</span>
                   </div>
                 </li><!--/.goods__item-->
