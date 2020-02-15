@@ -814,11 +814,16 @@ img {
   flex-wrap: wrap;
   padding-bottom: 70px;
 }
-.nav--footer {
-  width: 440px;
-  padding: 0;
+.nav--footer{
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }
 .nav--footer .nav__item:nth-child(2) {
+  margin-right: 38px;
+  margin-left: 38px;
+}
+.nav--footer .nav__item:last-child {
   margin-right: 0;
   margin-left: 0;
 }
