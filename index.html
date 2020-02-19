@@ -58,7 +58,7 @@
                   <a href="#" class="nav-select__link">Виртуальная реальность</a>
                 </li>
                 <li class="nav-select__item">
-                  <a href="#" class="nav-select__link">Моноподы для селфи</a>
+                  <a href="/catalog.html" class="nav-select__link">Моноподы для селфи</a>
                 </li>
                 <li class="nav-select__item">
                   <a href="#" class="nav-select__link">Экшн-камеры</a>
@@ -95,7 +95,18 @@
       <h2 class="visually-hidden">Промо-слайдер</h2>
       <div class="container">
         <ul class="hero-slider">
-          <li class="hero-slider__item  hero-slider__item--visual">
+          <ul class="points__list">
+            <li class="points__item">
+              <button type="button" class="points__btn points__btn--active" data-name="monopode"></button>
+            </li>     
+            <li class="points__item">
+              <button type="button" class="points__btn" data-name="bend"></button>
+            </li>
+            <li class="points__item">
+              <button type="button" class="points__btn" data-name="quadrocopter"></button>
+            </li>       
+          </ul>
+          <li class="hero-slider__item  hero-slider__item--visual monopode">
            <div class="hero-slider__pic">
             <img src="./img/slider-1/slider-1-png@3x.png" width="384" height="486" alt="Самая длинная палка для селфи " class="hero-slider__img">
            </div>
@@ -108,27 +119,24 @@
               </p>
               <div class="hero-slider__buttons">
                 <a href="#" class="btn hero-slider__btn">Подробнее</a>
-                <div class="buttons-row">
-                  <input type="radio" class="buttons-row__input">
-                  <input type="radio" class="buttons-row__input">
-                  <input type="radio" class="buttons-row__input">
-                </div><!--/.buttons-row-->
               </div><!--/.hero-slider__buttons-->
-              <table class="hero-slider__definitions">
-                <tr>
-                  <th>8,5 м</th>
-                  <th>5 кг</th>
-                  <th>Карбон</th>
-                </tr>
-                <tr>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
-                </tr>
-              </table><!--/.hero-slider__definitions-->
+              <div class="hero-slider__definitions definitions">
+                <div class="definitions__item">
+                  <div class="definitions__text">8,5 м</div>
+                  <div class="definitions__values">Длина палки</div>
+                </div>
+                <div class="definitions__item">
+                  <div class="definitions__text">5 кг</div>
+                  <div class="definitions__values">Вес палки</div>
+                </div>
+                <div class="definitions__item">
+                  <div class="definitions__text">Карбон</div>
+                  <div class="definitions__values">Материал</div>
+                </div>
+              </div><!--/.hero-slider__definitions-->
             </div><!--/.huro-slider__desc-->
           </li><!--/.hero-slider__item-->
-          <li class="hero-slider__item">
+          <li class="hero-slider__item bend">
             <div class="hero-slider__pic">
               <img src="./img/slider-1/slider-2-png@2x.png" width="345" height="485" alt="Мотивирующий фитнес-брослет" class="hero-slider__img">
             </div>
@@ -141,23 +149,16 @@
               </p>
               <div class="hero-slider__buttons">
                 <a href="#" class="btn hero-slider__btn">Подробнее</a>
-                <div class="buttons-row">
-                  <input type="radio" class="buttons-row__input">
-                  <input type="radio" class="buttons-row__input">
-                  <input type="radio" class="buttons-row__input">
-                </div><!--/.buttons-row-->
               </div><!--/.hero-slider__buttons-->
-              <table class="hero-slider__definitions">
-                <tr>
-                  <th>48 часов</th>
-                </tr>
-                <tr>
-                  <td>Без подзарядки</td>
-                </tr>
-              </table><!--/.hero-slider__definitions-->
+              <div class="hero-slider__definitions definitions">
+                <div class="definitions__item">
+                  <div class="definitions__text">48 часов</div>
+                  <div class="definitions__values">Без подзарядки</div>
+                </div>
+              </div><!--/.hero-slider__definitions-->
             </div><!--/.hero-slider__desc-->
           </li><!--/.hero-slider__item-->
-          <li class="hero-slider__item">
+          <li class="hero-slider__item quadrocopter">
             <div class="hero-slider__pic">
               <img src="./img/slider-1/slider-3-png@2x.png" width="526" height="334" alt="Квадрокоптер" class="hero-slider__img">
             </div>
@@ -170,42 +171,38 @@
               </p>
               <div class="hero-slider__buttons">
                 <a href="#" class="btn hero-slider__btn">Подробнее</a>
-                <div class="buttons-row">
-                  <input type="radio" class="buttons-row__input">
-                  <input type="radio" class="buttons-row__input">
-                  <input type="radio" class="buttons-row__input">
-                </div><!--/.buttons-row-->
               </div><!--/.hero-slider__buttons-->
-              <table class="hero-slider__definitions">
-                <tr>
-                  <th>800 м</th>
-                  <th>50 м</th>
-                </tr>
-                <tr>
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
-                </tr>
-              </table><!--/.hero-slider__definitions-->
+              <div class="hero-slider__definitions definitions">
+                <div class="definitions__item">
+                  <div class="definitions__text">800 м</div>
+                  <div class="definitions__values">Дальность полета</div>
+                </div>
+                <div class="definitions__item">
+                  <div class="definitions__text">50 м</div>
+                  <div class="definitions__values">Радиус поражения</div>
+                </div>
+              </div><!--/.hero-slider__definitions-->
             </div><!--/.hero-slider__desc-->
           </li><!--/.hero-slider__item-->
         </ul><!--/.hero-slider-->
       </div><!--/.container-->
     </section><!--/.hero-->
     <section class="sections">
-      <h2 class="visually-hidden">Разделы</h2>
+      <div class="container">
+        <h2 class="visually-hidden">Разделы</h2>
         <ul class="sections__list">
           <li class="sections__item">
             <a href="#" class="sections__link">
               <div class="sections__image">
-                <img src="./img/sections/popular-1.png" alt="Раздел виртуальная реальность"  width:="97px" height="55px" class="sections__img">
+                <img src="./img/sections/popular-1.png" alt="Раздел виртуальная реальность"  width="97" height="55" class="sections__img">
               </div>
               <h4 class="sections__name">Виртуальная реальность</h4>
             </a>
           </li><!--/.sections__item-->
           <li class="sections__item">
-            <a href="#" class="sections__link">
+            <a href="./catalog.html" class="sections__link">
               <div class="sections__image">
-                <img src="./img/sections/popular-2.png" alt="Раздел моноподы для селфи"  width:="86px" height="117px" class="sections__img sections__img--bottom">
+                <img src="./img/sections/popular-2.png" alt="Раздел моноподы для селфи"  width="86" height="117" class="sections__img sections__img--bottom">
               </div>
               <h4 class="sections__name">Моноподы для селфи</h4>
             </a>
@@ -213,7 +210,7 @@
           <li class="sections__item">
             <a href="#" class="sections__link">
               <div class="sections__image">
-                <img src="./img/sections/popular-3.png" alt="Раздел Экшн-камеры"  width="71px" height="87px" class="sections__img">
+                <img src="./img/sections/popular-3.png" alt="Раздел Экшн-камеры"  width="71" height="87" class="sections__img">
               </div>
               <h4 class="sections__name">Экшн-камеры</h4>
             </a>
@@ -221,7 +218,7 @@
           <li class="sections__item">
             <a href="#" class="sections__link">
               <div class="sections__image">
-                <img src="./img/sections/popular-4.png" alt="Раздел Фитнес-браслеты"  width:="107px" height="65px" class="sections__img">
+                <img src="./img/sections/popular-4.png" alt="Раздел Фитнес-браслеты"  width="107" height="65" class="sections__img">
               </div>
               <h4 class="sections__name">Фитнес-браслеты</h4>
             </a>
@@ -229,7 +226,7 @@
           <li class="sections__item">
             <a href="#" class="sections__link">
               <div class="sections__image">
-                <img src="./img/sections/popular-5.png" alt="Раздел Умные часы"  width:="56px" height="98px" class="sections__img">
+                <img src="./img/sections/popular-5.png" alt="Раздел Умные часы"  width="56" height="98" class="sections__img">
               </div>
               <h4 class="sections__name">Умные часы</h4>
             </a>
@@ -237,7 +234,7 @@
           <li class="sections__item">
             <a href="#" class="sections__link">
               <div class="sections__image">
-                <img src="./img/sections/poppular-6.png" alt="Раздел Квадрокоптеры"  width:="132px" height="69px" class="sections__img">
+                <img src="./img/sections/poppular-6.png" alt="Раздел Квадрокоптеры"  width="132" height="69" class="sections__img">
               </div>
               <h4 class="sections__name">Квадрокоптеры</h4>
             </a>
@@ -288,29 +285,30 @@
                 </div>
                 <img src="./img/slider-2/credit.svg" alt="доставка" width="136" height="164" class="services__img">
               </li><!--/.services__item-->
-            </ul><!--/.services_slides-->
-          </div>
+            </ul><!--/.services_list-->
+          </div><!--/.services__tabs-->
         </div><!--/.services__slider-->
-    </section><!--services-->
+      </div><!--/.container-->
+    </section><!--/.services-->
     <section class="logos">
       <h2 class="visually-hidden">Табы с сервисами</h2>
       <div class="container">
         <ul class="logos__list">
           <li class="logos__item">
             <img src="./img/logos/logo-1.png" alt="логотип Dji" width="260" height="100" class="logos__img">
-            <img src="./img/logos/logo-grey-1-jpg.jpg" width="260" height="100"  class="logos__img logos__img-opacity">
+            <img src="./img/logos/logo-grey-1-jpg.jpg" alt="логотип Dji" width="260" height="100"  class="logos__img logos__img-opacity">
           </li>
           <li class="logos__item">
             <img src="./img/logos/logo-2.png" alt="логотип SP Gardens" width="260" height="100" class="logos__img">
-            <img src="./img/logos/logo-grey-2-jpg.jpg" width="260" height="100" class="logos__img logos__img-opacity">
+            <img src="./img/logos/logo-grey-2-jpg.jpg" alt="логотип SP Gardens" width="260" height="100" class="logos__img logos__img-opacity">
           </li>
           <li class="logos__item">
             <img src="./img/logos/logo-3.png" alt="доготип Go Pro" width="260" height="100" class="logos__img">
-            <img src="./img/logos/logo-grey-3-jpg.jpg" width="260" height="100" class="logos__img logos__img-opacity">
+            <img src="./img/logos/logo-grey-3-jpg.jpg" alt="доготип Go Pro" width="260" height="100" class="logos__img logos__img-opacity">
           </li>
           <li class="logos__item">
             <img src="./img/logos/logo-4.png" alt="логотип Vive" width="260" height="100" class="logos__img">
-            <img src="./img/logos/logo-grey-4-jpg.jpg" width="260" height="100" class="logos__img logos__img-opacity">
+            <img src="./img/logos/logo-grey-4-jpg.jpg" alt="логотип Vive" width="260" height="100" class="logos__img logos__img-opacity">
           </li>
         </ul><!--/.logos__list-->
       </div><!--/.container-->
@@ -342,6 +340,7 @@
             <a href="#" class="btn partners__btn">Подробнее о нас</a>
           </article><!--/.about-us__item-->
           <article class="about-us__item">
+            <h2 class="visually-hidden">Как добраться к магазину Девайс</h2>
             <span class="about-us__title">Контакты</span>
             <p class="about-us__text">
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
@@ -418,11 +417,13 @@
     </div><!--/.container-->
   </footer><!--/.footer-->
   <div class="modal ">
-    <form action="" class="modal__form">
-      <button class="modal__close" type="button">Закрыть</button>
+    <form action="https://echo.htmlacademy.ru" method="POST" class="modal__form">
+      <button class="modal__close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
       <div class="modal__wrapper">
         <div class="form-group">
-          <label for="ame">Ваше имя:</label>
+          <label for="name">Ваше имя:</label>
           <input type="text" id="name" name="user-name" placeholder="Имя Фамилия">
         </div>
         <div class="form-group">
@@ -432,15 +433,19 @@
       </div>
       <div class="form-group">
         <label for="letter">Текст письма:</label>
-        <textarea name="letter" id="letter" rows="10" name="letter" placeholder="В свободной форме"></textarea>
+        <textarea name="letter" id="letter" rows="10" placeholder="В свободной форме"></textarea>
       </div>
       <button class="btn modal__btn" type="submit">Отправить</button>
     </form>
   </div><!--/.modal-->
   <div class="popup">
-    <button class="popup__close">закрыть</button>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473154!2d37.52742931538804!3d55.6870340045307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1580734151232!5m2!1sru!2sua" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <button class="popup__close">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473154!2d37.52742931538804!3d55.6870340045307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1580734151232!5m2!1sru!2sua"
+     width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </div>
+  <script src="./js/slider.js"></script>
   <script src="./js/tab.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/popup.js"></script>
