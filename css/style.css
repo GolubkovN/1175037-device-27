@@ -70,6 +70,7 @@ img {
   min-height: 206px;
   background-image: -moz-linear-gradient(to bottom, transparent 20px,rgba(240, 197, 46, 0.5) 20px 100%);
   background-image: -webkit-linear-gradient(to bottom, transparent 20px,rgba(240, 197, 46, 0.5) 20px 100%);
+  background-image: -ms-linear-gradient(to bottom, transparent 20px,rgba(240, 197, 46, 0.5) 20px 100%);
   background-image: linear-gradient(to bottom, transparent 20px,rgba(240, 197, 46, 0.5) 20px 100%);
   margin: 0 auto;
   margin-top: 20px;
@@ -1340,8 +1341,6 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 2px;
   background-color: #000;
   position: absolute;
-  top: 0;
-  right: 0;
 }
 .product-filter__item:not(:last-child) {
   margin-bottom: 10px;
