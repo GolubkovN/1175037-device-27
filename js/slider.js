@@ -1,14 +1,14 @@
-let slider = function () {
-    let sliderNav = document.querySelectorAll(".points__btn");
-    let sliderContent = document.querySelectorAll(".hero-slider__item");
-    let sliderName;
+var slider = function () {
+    var sliderNav = document.querySelectorAll(".points__btn");
+    var sliderContent = document.querySelectorAll(".hero-slider__item");
+    var sliderName;
 
-    sliderNav.forEach(item => {
+    sliderNav.forEach(function (item) {
         item.addEventListener("click", selectSliderNav)
     });
 
     function selectSliderNav() {
-        sliderNav.forEach(item => {
+        sliderNav.forEach(function (item) {
             item.classList.remove("points__btn--active");
         });
         this.classList.add("points__btn--active");
@@ -17,7 +17,7 @@ let slider = function () {
     }
 
     function selectSliderContent(sliderName) {
-        sliderContent.forEach(item => {
+        sliderContent.forEach(function (item) {
             item.classList.contains(sliderName) ? item.classList.add("hero-slider__item--visual") : 
             item.classList.remove("hero-slider__item--visual");
         })

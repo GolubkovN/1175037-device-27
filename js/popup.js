@@ -1,6 +1,6 @@
-const popupOpen = document.querySelector(".popup__open");
-const map = document.querySelector(".popup");
-const popupClose = document.querySelector(".popup__close");
+var popupOpen = document.querySelector(".popup__open");
+var map = document.querySelector(".popup");
+var popupClose = document.querySelector(".popup__close");
 
 popupOpen.addEventListener("click", function (evt) {
     evt.preventDefault();

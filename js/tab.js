@@ -1,15 +1,15 @@
-let tab = function () {
-    let tabNav = document.querySelectorAll(".services__link");
-    let tabContent = document.querySelectorAll(".services__item");
-    let tabName;
+var tab = function () {
+    var tabNav = document.querySelectorAll(".services__link");
+    var tabContent = document.querySelectorAll(".services__item");
+    var tabName;
 
-    tabNav.forEach(item => {
+    tabNav.forEach(function (item) {
         item.addEventListener("click", selectTabNav)
     });
 
     function selectTabNav(evt) {
         evt.preventDefault();
-        tabNav.forEach(item => {
+        tabNav.forEach(function (item) {
             item.classList.remove("is-active");
         });
         this.classList.add("is-active");
@@ -18,7 +18,7 @@ let tab = function () {
     }
 
     function selectTabContent(tabName) {
-        tabContent.forEach(item => {
+        tabContent.forEach(function (item) {
             item.classList.contains(tabName) ? item.classList.add("services__item--active") :
              item.classList.remove("services__item--active");
         })
