@@ -12,7 +12,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header-inner">
         <a href="index.html" class="logo">
           <img src="./img/logo/device.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
         </a>
@@ -113,30 +113,12 @@
         </div><!--/.breadcrumb-->
       </div><!--/.container-->
       <div class="product">
-        <div class="product__header">
-          <div class="container container--size-middle">
-            <div class="product-sorting">
-              <h2>Фильтр:</h2>
-              <ul class="product-sorting__list">
-                <li class="product-sorting__item">
-                  <h2>сортировка:</h2>
-                  <ul class="product-sorting__nav">
-                    <li><a href="#" class="product-sorting__link product-sorting__link--active">По цене</a></li>
-                    <li><a href="#" class="product-sorting__link">По типу</a></li>
-                    <li><a href="#" class="product-sorting__link">По популярности</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="product-sorting__arrows">
-                <a href="" class="product-sorting__arrow product-sorting__arrow--up">по убыванию</a>
-                <a href="" class="product-sorting__arrow product-sorting__arrow--down">по возрастанию</a>
-              </div>
-            </div>
-          </div><!--/.container-->
-        </div>
-        <div class="container container--size-middle">
+        <div class="container">
           <div class="product__wrapper">
             <aside class="sidebar">
+              <div class="sidebar__title">
+                <h2>Фильтр:</h2>
+              </div>
               <form action="#" class="product-filter">
                 <fieldset class="product-filter__group">
                   <legend class="product-filter__title">Стоимость</legend>
@@ -161,7 +143,7 @@
                   </div>
                   <div class="product-filter__item">
                     <label class="product-filter__check-label">
-                      <input type="checkbox" name="color" class="product-filter__check-input" checked disabled>
+                      <input type="checkbox" name="color" class="product-filter__check-input">
                       <span class="product-filter__text"></span>
                       Белый
                     </label>
@@ -191,7 +173,7 @@
                 <fieldset class="product-filter__group">
                   <legend class="product-filter__title">Bluetooth</legend>
                   <div class="product-filter__item">
-                    <input type="radio" class="product-filter__radio-input" id="radio-1" name="bluetooth" value="there-is" checked disabled>
+                    <input type="radio" class="product-filter__radio-input" id="radio-1" name="bluetooth" value="there-is">
                     <label for="radio-1" class="product-filter__radio-label">Есть</label>
                   </div>
                   <div class="product-filter__item">
@@ -204,7 +186,23 @@
                 </div>
               </form><!--/.product__filter-->
             </aside><!--/.sidebar-->
-            <div class="goods__wrapper">
+            <div class="goods-wrapper">
+              <div class="sorting">
+                <ul class="sorting__list">
+                  <li class="sorting__item">
+                    <h2>сортировка:</h2>
+                    <ul class="sorting__nav">
+                      <li><a href="#" class="sorting__link sorting__link--active">По цене</a></li>
+                      <li><a href="#" class="sorting__link">По типу</a></li>
+                      <li><a href="#" class="sorting__link">По популярности</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="sorting__arrows">
+                  <a href="" class="sorting__arrow sorting__arrow--up">по убыванию</a>
+                  <a href="" class="sorting__arrow sorting__arrow--down">по возрастанию</a>
+                </div>
+              </div>
               <ul class="goods">
                 <li class="goods__item" tabindex="0">
                   <div class="goods__content">
@@ -288,7 +286,7 @@
       </div><!--/.product-->
     </main>
     <footer class="footer">
-      <div class="container container--size-double">
+      <div class="container">
         <div class="pannel pannel--footer">
           <a href="index.html" class="logo">
             <img src="./img/footer/device-footer.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
