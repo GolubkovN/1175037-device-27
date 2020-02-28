@@ -5,7 +5,6 @@ var slider = function () {
 
     sliderNav.forEach(function (item) {
         item.addEventListener("click", selectSliderNav)
-        
     });
 
     function selectSliderNav() {
@@ -15,7 +14,6 @@ var slider = function () {
         this.classList.add("points__btn--active");
         sliderName = this.getAttribute("data-name");
         selectSliderContent(sliderName);
-        console.log("click");
     }
 
     function selectSliderContent(sliderName) {
